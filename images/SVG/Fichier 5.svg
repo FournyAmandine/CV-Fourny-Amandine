@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.73 99.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e52a21;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #ffd103;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #64a7dc;
+        stroke-width: .5px;
+      }
+
+      .cls-4 {
+        fill: #a7a6a6;
+      }
+
+      .cls-6 {
+        fill: #a7daea;
+      }
+
+      .cls-5, .cls-7 {
+        fill: #64a7dc;
+      }
+
+      .cls-8 {
+        fill: #9e4217;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-2" x="1.89" y="54.96" width="89.9" height="39.29"/>
+      <rect class="cls-4" x="1.89" y="94.25" width="89.9" height="4.13"/>
+      <polygon class="cls-1" points="1.89 54.96 7.72 46.44 85.78 46.44 91.8 54.96 1.89 54.96"/>
+      <rect class="cls-5" x="44.94" y="1.23" width="3.4" height="18.59"/>
+      <polygon class="cls-1" points="31.93 43.31 29.59 45.16 23.44 38.39 44.94 19.82 48.35 19.82 69.82 39.82 63.01 45.72 46.69 31.76 31.93 43.31"/>
+      <polygon class="cls-2" points="31.93 54.96 31.93 42.29 46.69 31.76 61.96 43.36 61.96 54.96 31.93 54.96"/>
+      <path class="cls-1" d="M48.35,1.23s5.76,1.2,7.35,2.36,9.78-1.18,9.78-1.18v14.76s-4.23,2.2-10.05,0-7.09-2.2-7.09-2.2V1.23Z"/>
+    </g>
+    <rect class="cls-7" x="7.39" y="61.66" width="5.44" height="11.68"/>
+    <rect class="cls-7" x="19.8" y="61.66" width="5.44" height="11.68"/>
+    <rect class="cls-7" x="7.39" y="76.36" width="5.44" height="11.68"/>
+    <rect class="cls-7" x="19.8" y="76.36" width="5.44" height="11.68"/>
+    <rect class="cls-7" x="68.66" y="61.66" width="5.44" height="11.68"/>
+    <rect class="cls-7" x="81.07" y="61.66" width="5.44" height="11.68"/>
+    <rect class="cls-7" x="68.66" y="76.36" width="5.44" height="11.68"/>
+    <rect class="cls-7" x="81.07" y="76.36" width="5.44" height="11.68"/>
+    <ellipse class="cls-6" cx="46.63" cy="46.64" rx="8.13" ry="7.95"/>
+    <polyline class="cls-3" points="46.3 39.97 46.3 46.64 53.96 46.64"/>
+    <path class="cls-8" d="M39.57,93.25v-18.66s6.71-10.71,13.96,0v18.66h-13.96Z"/>
+  </g>
+</svg>
