@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 271.2 237.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Dégradé_sans_nom_9-2);
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-2 {
+        fill: url(#Dégradé_sans_nom_9-3);
+        filter: url(#drop-shadow-6);
+      }
+
+      .cls-3 {
+        fill: url(#Dégradé_sans_nom_7-2);
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-4 {
+        fill: url(#Dégradé_sans_nom_7-3);
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-5 {
+        fill: #5e2711;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 32px;
+      }
+
+      .cls-6 {
+        fill: url(#Dégradé_sans_nom_9);
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-7 {
+        fill: url(#Dégradé_sans_nom_7);
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        fill: #f4d8e9;
+      }
+    </style>
+    <radialGradient id="Dégradé_sans_nom_7" data-name="Dégradé sans nom 7" cx="110.73" cy="51.81" fx="110.73" fy="67.58" r="25.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e5a5aa"/>
+      <stop offset=".16" stop-color="#d98895"/>
+      <stop offset=".8" stop-color="#bc3461"/>
+      <stop offset=".97" stop-color="#9e2f56"/>
+    </radialGradient>
+    <filter id="drop-shadow-1" x="73.44" y="17.28" width="80.4" height="80.4" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.83" dy="5.67"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="Dégradé_sans_nom_7-2" data-name="Dégradé sans nom 7" cx="106.61" cy="190.74" fx="124.29" fy="198.56" r="25.81" xlink:href="#Dégradé_sans_nom_7"/>
+    <filter id="drop-shadow-2" x="68.4" y="155.52" width="82.08" height="81.84" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.83" dy="5.67"/>
+      <feGaussianBlur result="blur-2" stdDeviation="5"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".5"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="Dégradé_sans_nom_7-3" data-name="Dégradé sans nom 7" cx="228.71" cy="95.88" fx="228.71" fy="86.05" r="24.51" xlink:href="#Dégradé_sans_nom_7"/>
+    <filter id="drop-shadow-3" x="192" y="61.92" width="79.2" height="79.2" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.83" dy="5.67"/>
+      <feGaussianBlur result="blur-3" stdDeviation="5"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".5"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="Dégradé_sans_nom_9" data-name="Dégradé sans nom 9" cx="156.93" cy="34.06" fx="156.93" fy="24.24" r="24.51" gradientUnits="userSpaceOnUse">
+      <stop offset=".01" stop-color="#e0e0e0"/>
+      <stop offset=".34" stop-color="#c6c4c1"/>
+      <stop offset=".63" stop-color="#adaaa6"/>
+      <stop offset="1" stop-color="#747270"/>
+    </radialGradient>
+    <filter id="drop-shadow-4" x="120.24" y="0" width="79.2" height="79.44" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.83" dy="5.67"/>
+      <feGaussianBlur result="blur-4" stdDeviation="5"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".5"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="Dégradé_sans_nom_9-2" data-name="Dégradé sans nom 9" cx="36.77" cy="114.82" fx="36.77" fy="104.99" xlink:href="#Dégradé_sans_nom_9"/>
+    <filter id="drop-shadow-5" x="0" y="80.88" width="79.2" height="79.2" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.83" dy="5.67"/>
+      <feGaussianBlur result="blur-5" stdDeviation="5"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".5"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="Dégradé_sans_nom_9-3" data-name="Dégradé sans nom 9" cx="221.94" cy="183.86" fx="221.94" fy="174.03" r="24.51" xlink:href="#Dégradé_sans_nom_9"/>
+    <filter id="drop-shadow-6" x="185.04" y="150" width="79.44" height="79.2" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.83" dy="5.67"/>
+      <feGaussianBlur result="blur-6" stdDeviation="5"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".5"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <circle class="cls-9" cx="135.82" cy="125.36" r="103"/>
+    <text class="cls-5" transform="translate(66.29 134.76)"><tspan x="0" y="0">au</tspan><tspan class="cls-8" x="33.06" y="0">t</tspan><tspan x="43.46" y="0">onome</tspan></text>
+    <circle class="cls-7" cx="110.73" cy="51.81" r="25.09"/>
+    <circle class="cls-3" cx="106.61" cy="190.74" r="25.81"/>
+    <circle class="cls-4" cx="228.71" cy="95.88" r="24.51"/>
+    <circle class="cls-6" cx="156.93" cy="34.06" r="24.51"/>
+    <circle class="cls-1" cx="36.77" cy="114.82" r="24.51"/>
+    <circle class="cls-2" cx="221.94" cy="183.86" r="24.51"/>
+  </g>
+</svg>
