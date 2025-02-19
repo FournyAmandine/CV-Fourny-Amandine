@@ -1,3 +1,26 @@
+:root{
+    --main-color : #FFD200;
+    --main-text-color : #5A1F06;
+    --main-background-color : #F4F6FA;
+    --second-main-color : #015F20;
+    --third-main-color : #D70200;
+    --light-green : #05A833;
+    --light-blue : #0E74E1;
+    --dark-blue : #121661;
+    --header-text-color :#040607;
+    --orange : #E77A00;
+    --red : #AE3434;
+    --purple : #880997;
+    --green : #28923D;
+    --border-orange : #DD5C05;
+    --border-red : #FB0200;
+    --border-purple : #D00DE6;
+    --border-green : #007517;
+    --border-blue : #044A95;
+    --border-yellow: #DCB404;
+}
+
+
 .hidden{
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
