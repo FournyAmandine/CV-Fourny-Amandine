@@ -1,3 +1,16 @@
+@font-face {
+    font-family: Vollkorn, sérif;
+    font-weight: 400;
+    src: url("./fonts/vollkorn/Vollkorn-Regular.ttf");
+}
+
+@font-face {
+    font-family: Vollkorn, sérif;
+    font-weight: 900;
+    src: url("./fonts/vollkorn/Vollkorn-Black.ttf");
+}
+
+
 :root{
     --main-color : #FFD200;
     --main-text-color : #5A1F06;
@@ -20,7 +33,6 @@
     --border-yellow: #DCB404;
 }
 
-
 .hidden{
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -28,4 +40,47 @@
     height: 1px;
     overflow: hidden;
     width: 1px;
+}
+
+body{
+   background-color: var(--main-background-color);
+    font-family: Vollkorn, serif;
+    color: var(--main-text-color);
+}
+
+.div--offers{
+    color: var(--header-text-color);
+}
+
+.offer-soft-skills strong {
+    color: var(--main-text-color);
+}
+
+.offer-soft-skills, .school-career{
+    background-color: var(--main-color);
+}
+
+.offer-hard-skills{
+    background-color: var(--light-green);
+}
+
+.personal-information{
+    background-color: var(--second-main-color);
+}
+
+.skills{
+    background-color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+h2{
+    font-size: 44px;
+}
+
+.personal-information h2{
+    font-size: 56px;
+    color: white;
 }
