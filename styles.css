@@ -10,6 +10,29 @@
     src: url("./fonts/vollkorn/Vollkorn-Black.ttf");
 }
 
+@font-face {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    src: url("./fonts/roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    src: url("./fonts/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    src: url("./fonts/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    src: url("./fonts/roboto/Roboto-Regular.ttf");
+}
 
 :root{
     --main-color : #FFD200;
