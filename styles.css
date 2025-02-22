@@ -287,10 +287,43 @@ ul.list--primary-nav li {
 
 .word-02{
     margin-top: 48px;
+    padding-bottom: 157px;
 }
 
 .school-career{
     background-color: var(--second-main-color);
     background-image: url("./images/computer/SVG/fond-school-careersvg.svg");
     background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 87px;
+}
+
+.school-career h2{
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.ex-year{
+    font-size: 44px;
+    margin: 32px 321px 51px;
+}
+
+.school-career a{
+    background-color: white;
+    padding: 19px 43px;
+    border-radius: 40px;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.school-career img{
+    width: 206px;
+    height: 287px;
+}
+
+.school-career .div--figure-school{
+    display: flex;
+    margin: 123px 110px 48px;
+
 }
