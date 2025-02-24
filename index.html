@@ -362,15 +362,13 @@
     </section>
     <section class="projects" itemscope itemtype="https://schema.org/CreativeWork">
         <h2>découvrez 3 projets, qui je l’espère vous plairont ! </h2>
-        <p>ces projets touchent à plusieurs domaines de l’infographie pour étendre les possibiltés</p>
+        <p class="subtitle">ces projets touchent à plusieurs domaines de l’infographie pour étendre les possibiltés</p>
         <div class="div--articles-projects">
             <article class="article--project-galerie">
                 <img itemprop="image" src="images/computer/SVG/galerie.svg" alt="galerie de photos" srcset="">
                 <h3 itemprop="name">galerie photos</h3>
                 <p itemprop="abstract">ce site a été réaliser dans le cadre du cours de design Web. Il est fait grâce à
-                    la
-                    technique grid
-                    layout. </p>
+                    la technique grid layout. </p>
                 <a itemprop="url" href="#" title="Cliquez pour découvrir plus sur ce projet">en savoir plus</a>
             </article>
             <article class="article--project-museum">
@@ -396,7 +394,7 @@
         <h2>formulaire</h2>
         <p>si vous souhaitez me contactez parce que vous avez des questions ou que mon travail vous intéresse,
             écrivez-moi ! </p>
-        <form action="#" method="post">
+        <form action="#" method="post" class="contact">
             <div>
                 <label for="name">nom</label>
                 <input type="text" id="name" name="name">
@@ -413,35 +411,37 @@
                 <label for="message">votre message</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
             </div>
-            <input type="submit">
+            <input type="submit" value="envoyer">
         </form>
     </section>
     <section class="section--reviews" itemscope itemtype="https://schema.org/Review">
         <h2>ils me font confiance</h2>
-        <div class="section--item-01">
-            <p>Bon</p>
-            <img src="images/computer/SVG/note-globale.svg" alt="">
-            <small>Basé sur 4 avis</small>
-            <img src="images/computer/SVG/truspilot.svg" alt="logo Truspilot avec une étoile devant">
-        </div>
-        <div class="section--item-02">
-            <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
-            <p class="title" itemprop="name">sérieuse</p>
-            <p itemprop="reviewBody">cette fille travaille sérieusement et professionnellement</p>
-            <small><em itemprop="author">Jean</em>, <span itemprop="sdDatePublished">19 octobre</span></small>
-            <p>Les avis populaires</p>
-        </div>
-        <div class="section--item-03">
-            <img itemprop="reviewRating" src="images/computer/SVG/5-etoiles.svg" alt="">
-            <p class="title" itemprop="name">souriante</p>
-            <p itemprop="reviewBody">cette fille est souriante et on voit qu'elle aime son travail</p>
-            <small><em itemprop="author">Laurent</em>, <span itemprop="sdDatePublished">20 décembre</span></small>
-        </div>
-        <div class="section--item-04">
-            <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
-            <p class="title" itemprop="name">rapide</p>
-            <p itemprop="reviewBody">le travail a été rapide effectué!</p>
-            <small><em itemprop="author">Anne-Catherine</em>, <span itemprop="sdDatePublished">7 mars</span></small>
+        <div class="div--items">
+            <div class="div--item-01">
+                <p>Bon</p>
+                <img src="images/computer/SVG/note-globale.svg" alt="">
+                <small>Basé sur 4 avis</small>
+                <img class="truspilot" src="images/computer/SVG/truspilot.svg" alt="logo Truspilot avec une étoile devant">
+            </div>
+            <div class="div--item-02">
+                <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
+                <p class="title" itemprop="name">sérieuse</p>
+                <p itemprop="reviewBody">cette fille travaille sérieusement et professionnellement</p>
+                <small><em itemprop="author">Jean</em>, <span itemprop="sdDatePublished">19 octobre</span></small>
+                <p class="reviews">Les avis populaires</p>
+            </div>
+            <div class="div--item-03">
+                <img itemprop="reviewRating" src="images/computer/SVG/5-etoiles.svg" alt="">
+                <p class="title" itemprop="name">souriante</p>
+                <p itemprop="reviewBody">cette fille est souriante et on voit qu'elle aime son travail</p>
+                <small><em itemprop="author">Laurent</em>, <span itemprop="sdDatePublished">20 décembre</span></small>
+            </div>
+            <div class="div--item-04">
+                <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
+                <p class="title" itemprop="name">rapide</p>
+                <p itemprop="reviewBody">le travail a été rapide effectué!</p>
+                <small><em itemprop="author">Anne-Catherine</em>, <span itemprop="sdDatePublished">7 mars</span></small>
+            </div>
         </div>
     </section>
 </main>
@@ -452,62 +452,69 @@
         <div class="adress">
             <img src="images/computer/SVG/adresse.svg"
                  alt="icone d'un point de localisation sur une carte sur un fond rond blanc" srcset="">
-            <p class="title">mon adresse</p>
-            <p itemprop="address">42, Rue du Spitron, 6687 Bastogne</p>
+            <div class="details">
+                <p class="title">mon adresse</p>
+                <p itemprop="address">42, Rue du Spitron, 6687 Bastogne</p>
+            </div>
         </div>
         <div class="phone">
             <img src="images/computer/SVG/tel.svg" alt="icone d'un ancien téléphone brun sur un fond rond blanc"
                  srcset="">
-            <p class="title">mon téléphone</p>
-            <p itemprop="telephone">0472 25 89 94</p>
-            <p>Du lundi au venredi, de 9h à 20h</p>
+            <div class="details">
+                <p class="title">mon téléphone</p>
+                <p itemprop="telephone">0472 25 89 94</p>
+                <p>Du lundi au venredi, de 9h à 20h</p>
+            </div>
         </div>
     </div>
-    <aside class="follow">
-        <h2>me suivre</h2>
-        <form action="#" method="post">
-            <label for="follow">si vous voulez suivre mon travail et savoir quand un nouveau projet sort, inscrivez-vous
-                à la newsletter</label>
-            <input type="text" name="follow" id="follow" placeholder="Adresse-mail*">
-            <small>En vous inscrivant, vous accepter de recevoir des mails dès qu’un projet sort ou lorsqu’il y a
-                quelque chose de nouveau. Vous pouvez bien sûr vous désabonner à tout moment ! </small>
-            <input type="submit" name="submit" value="je m'inscris">
-        </form>
-    </aside>
-    <nav>
-        <h2 class="hidden">navigation secondaire</h2>
-        <ul class="secondary--nav">
-            <li>découvrir d'autres projets
-                <ul class="list--other-projects">
-                    <li class="list_item_other-project">animation 3d</li>
-                    <li class="list_item_other-project">flyers 2d</li>
-                    <li class="list_item_other-project">wordpress</li>
-                </ul>
-            </li>
-            <li>site dé reférence
-                <ul class="site">
-                    <li class="link--site"><a href="https://www.mms.com/fr-be"
-                                              title="Cliquez pour aller sur le site de référence de ce CV">M&Ms</a></li>
-                </ul>
-            </li>
-            <li>suivez-moi
-                <ul class="list--social-networks">
-                    <li class="list_item_social-network"><a href="#"
-                                                            title="Cliquez pour aller sur mon compte instagram"></a>
-                    </li>
-                    <li class="list_item_social-network"><a href="#"
-                                                            title="Cliquez pour aller sur mon compte facebook"></a></li>
-                    <li class="list_item_social-network"><a href="#"
-                                                            title="Cliquez pour aller sur mon compte twitter"></a></li>
-                    <li class="list_item_social-network"><a href="#"
-                                                            title="Cliquez pour aller sur mon compte youtube"></a></li>
-                    <li class="list_item_social-network"><a href="#"
-                                                            title="Cliquez pour aller sur mon compte pinterest"></a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <div class="div--footer">
+        <aside class="follow">
+            <h2 class="hidden">me suivre</h2>
+            <form action="#" method="post" class="inscription">
+                <p>si vous voulez suivre mon travail et savoir quand un nouveau projet sort, inscrivez-vous
+                    à la newsletter</p>
+                <label for="follow">Adresse-mail*</label>
+                <input type="text" name="follow" id="follow">
+                <small>En vous inscrivant, vous accepter de recevoir des mails dès qu’un projet sort ou lorsqu’il y a
+                    quelque chose de nouveau. Vous pouvez bien sûr vous désabonner à tout moment ! </small>
+                <input type="submit" name="submit" value="je m'inscris">
+            </form>
+        </aside>
+        <nav class="secondary-nav">
+            <h2 class="hidden">navigation secondaire</h2>
+            <ul class="list--secondary-nav">
+                <li>découvrir d'autres projets
+                    <ul class="list--other-projects">
+                        <li class="list_item_other-project">animation 3d</li>
+                        <li class="list_item_other-project">flyers 2d</li>
+                        <li class="list_item_other-project">wordpress</li>
+                    </ul>
+                </li>
+                <li>site dé reférence
+                    <ul class="site">
+                        <li class="link--site"><a href="https://www.mms.com/fr-be"
+                                                  title="Cliquez pour aller sur le site de référence de ce CV">M&Ms</a></li>
+                    </ul>
+                </li>
+                <li>suivez-moi
+                    <ul class="list--social-networks">
+                        <li class="list_item_social-network"><a href="#"
+                                                                title="Cliquez pour aller sur mon compte instagram"></a>
+                        </li>
+                        <li class="list_item_social-network"><a href="#"
+                                                                title="Cliquez pour aller sur mon compte facebook"></a></li>
+                        <li class="list_item_social-network"><a href="#"
+                                                                title="Cliquez pour aller sur mon compte twitter"></a></li>
+                        <li class="list_item_social-network"><a href="#"
+                                                                title="Cliquez pour aller sur mon compte youtube"></a></li>
+                        <li class="list_item_social-network"><a href="#"
+                                                                title="Cliquez pour aller sur mon compte pinterest"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </footer>
 </body>
 </html>
