@@ -31,7 +31,7 @@
 
 main {
     font-family: Vollkorn, serif;
-    background-color: var(--main-background-color);
+    background-color: white;
     color: var(--main-text-color);
 }
 
@@ -62,10 +62,6 @@ main {
 
 .article-school {
     background-color: var(--main-color);
-}
-
-.skills {
-    background-color: white;
 }
 
 li {
@@ -155,7 +151,7 @@ ul.list--primary-nav li {
 }
 
 
-.personal-information article {
+.personal-information article{
     max-width: 344px;
     max-height: 518px;
     border-radius: 15px;
@@ -178,12 +174,12 @@ ul.list--primary-nav li {
 
 .personal-information a.link--projects {
     padding: 20px 60px 16px 82px;
-    background-color: white;
     background-image: url("./images/computer/SVG/logo.svg");
     background-repeat: no-repeat;
     background-position: 22px 10px;
     max-width: 130px;
     margin-top: 47px;
+    background-color: white;
 }
 
 .personal-information a.link--qualities {
@@ -310,11 +306,11 @@ ul.list--primary-nav li {
 }
 
 .school-career a{
-    background-color: white;
     padding: 19px 43px;
     border-radius: 40px;
     font-weight: 900;
     font-size: 16px;
+    background-color: white;
 }
 
 .school-career img{
@@ -324,7 +320,7 @@ ul.list--primary-nav li {
 
 .school-career .div--figure-school{
     display: flex;
-    margin: 123px 110px 48px;
+    margin: 123px 110px 0;
     padding-bottom: 43px;
 }
 
@@ -370,6 +366,253 @@ ul.list--primary-nav li {
     margin-top: 20px;
 }
 
+.qualities{
+    background-image: url("./images/computer/SVG/fond-qualities.svg");
+    background-repeat: no-repeat;
+}
+
+.qualities a.discover-me, .qualities h2, .qualities .subtitle{
+    margin-left: 122px;
+}
+
+.qualities h2{
+    margin-top: 73px;
+    margin-bottom: 24px;
+}
+
+.qualities .subtitle{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    color: black;
+    max-width: 496px;
+    margin-bottom: 41px;
+}
+
+.qualities a.discover-me{
+    padding: 22px 56px 22px 71px;
+    border: 2px var(--main-text-color) solid;
+    border-radius: 40px;
+    font-weight: 900;
+    background-image: url("./images/computer/SVG/logo.svg");
+    background-repeat: no-repeat;
+    background-position: 22px 13px;
+}
+
+.div--article{
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 115px 0 103px;
+    text-align: center;
+}
+
+.div--qualities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside--quality{
+    margin-right: 155px;
+    margin-top: 71px;
+    display: flex;
+}
 
 
+.aside--quality p{
+    margin-top: 9px;
+    margin-right: 46px;
+    max-width: 162px;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: black;
+}
 
+.aside--quality .fleche{
+    margin-top: 265px;
+    margin-left: 89px;
+    width: 109px;
+    height: 77px;
+}
+
+.aside--quality div{
+    display: flex;
+    flex-direction: column;
+}
+
+.article--quality-motivation{
+    margin-top: 63px;
+}
+
+.article--quality-discretion{
+    margin-top: 126px;
+}
+
+.article--quality-responsability{
+    margin-top: 166px;
+}
+
+.div--article h3{
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+
+.div--article p{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 29px;
+}
+
+.div--article a, .div--article h3{
+    font-family: Roboto,sans-serif;
+    font-weight: 900;
+}
+
+.div--article a{
+    width: 159px;
+    display: inline-block;
+    text-align: left;
+    padding-right: 76px;
+    padding-left: 37px;
+    padding-bottom: 7px;
+    background-image: url("./images/all/Arrow_right.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.div--skills h2{
+    padding-top: 197px;
+}
+
+.skills-title p{
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-weight: 500;
+    margin-top: 7px;
+    max-width: 485px;
+}
+
+.skills{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div--skills{
+    margin-top: 86px;
+    overflow-x: scroll;
+}
+
+.skills-title{
+    width: 683px;
+    margin-top: 197px;
+}
+
+
+.list--slider-skills{
+    display: flex;
+    text-align: center;
+}
+
+li.item--slider-skill+li{
+    margin-left: 85px;
+}
+
+
+.list--slider-skills figcaption{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 31px;
+    margin-bottom: 79px;
+}
+
+.css figcaption{
+    margin-top: 9px;
+}
+
+.sgc figcaption{
+    margin-top: 25px;
+}
+
+.php figcaption{
+    margin-top: 21px;
+}
+
+.values{
+    text-align: center;
+    background-image: url("./images/computer/SVG/fond-valeurs.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.values h2{
+    margin-bottom: 21px;
+}
+
+.values p{
+    margin-bottom: 21px;
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+.div--articles-values{
+    display: flex;
+    overflow-x: scroll;
+    margin: 39px 345px 0;
+    justify-content: left;
+}
+
+.div--articles-values h3{
+    margin-top: 42px;
+    padding-bottom: 129px;
+}
+
+.article--value-mutual-aid, .article--value-ambience, .article--value-variety{
+    margin-top: 107px;
+}
+
+.div--articles-values article:not(article:last-of-type){
+    margin-right: 44px;
+}
+
+.projects, .form, .section--reviews{
+    background-color: var(--main-background-color);
+}
+
+.projects{
+    text-align: center;
+}
+
+.projects h2{
+    max-width: 572px;
+    margin-left: 10.2045454545em;
+    margin-bottom: 15px;
+}
+
+.div--articles-projects{
+    display: flex;
+    padding-bottom: 151px;
+    padding-top: 48px;
+    justify-content: space-between;
+    margin-left: 124px;
+    margin-right: 124px;
+}
+
+.div--articles-projects article{
+    max-width: 390px;
+    max-height: 676px;
+}
+
+.article--project-galerie{
+    background-color: var(--red);
+}
+
+.article--project-museum{
+    background-color: var(--dark-blue);
+}
+
+.article--project-chariot{
+    background-color: var(--light-blue);
+}
