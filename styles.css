@@ -74,8 +74,9 @@ a {
 
 .list--primary-nav{
     display: grid;
-    grid-template-columns: 31.25em auto;
+    grid-template-columns: 35.5% 1fr;
     grid-template-rows: 6.9375em;
+    justify-content: space-between;
 }
 
 .primary-nav-other{
@@ -92,6 +93,7 @@ a {
 }
 
 .list--primary-nav-icones{
+    font-size: 0.875em;
     margin-top: 1.625em;
 }
 
@@ -119,8 +121,12 @@ a {
     background-image: url("./images/computer/SVG/icons/cart.svg");
 }
 
+.text{
+    font-size: 0.75em;
+}
+
 .text01{
-    margin-left: 3.125em;
+    margin-left: 9.7142857143em;
     margin-right: 1.25em;
 }
 
