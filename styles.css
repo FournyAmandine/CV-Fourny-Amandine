@@ -74,7 +74,7 @@ a {
 
 .list--primary-nav{
     display: grid;
-    grid-template-columns: 35.5% 1fr;
+    grid-template-columns: 37.9% 1fr;
     grid-template-rows: 6.9375em;
     justify-content: space-between;
 }
@@ -95,6 +95,14 @@ a {
 .list--primary-nav-icones{
     font-size: 0.875em;
     margin-top: 1.625em;
+}
+
+.primary-nav-other{
+    justify-self: flex-end;
+}
+
+.primary-nav{
+    width: 85.03401360544%;
 }
 
 .menu{
@@ -126,15 +134,20 @@ a {
 }
 
 .text01{
-    margin-left: 9.7142857143em;
-    margin-right: 1.25em;
+    margin-left: 11.3333333333em;
+    margin-right: 1.666667em;
+    padding: 0.8125em 3.625em 0.8125em 5.125em;
+    background-image: url("./images/computer/SVG/logo.svg");
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: 1.375em 0.25em;
 }
 
 .icones{
     background-repeat: no-repeat;
     background-position: top;
     padding-top: 3.0625em;
-    margin-right: 2.5em;
+    margin-right: 3.07142857143em;
 }
 
 .icone01{
@@ -207,7 +220,7 @@ h2 {
 }
 
 .logo {
-    margin: 2.5em 1.8125em 2.125em 2.8125em;
+    margin: 2.5em 2.8333333333em 2.125em 2.8125em;
 }
 
 .container{
@@ -220,13 +233,6 @@ section.nav {
 
 .text, .projects, .form, .section--reviews {
     background-color: var(--main-background-color);
-}
-
-.text01 {
-    padding: 0.8125em 3.625em 0.8125em 5.125em;
-    background-image: url("./images/computer/SVG/logo.svg");
-    background-repeat: no-repeat;
-    background-position: 1.375em 0.25em;
 }
 
 .text02 {
@@ -354,6 +360,7 @@ section.nav {
     background-image: url("./images/computer/SVG/fond-school-careersvg.svg");
     background-repeat: no-repeat;
     padding-top: 5.4375em;
+    background-size: 100%;
 }
 
 .ex-year{
@@ -369,6 +376,15 @@ section.nav {
 .school-career .div--figure-school{
     margin: 7.6875em 6.875em auto;
     padding-bottom: 2.6875em;
+}
+
+.school-career img{
+    width: 100%;
+    height: auto;
+}
+
+.div--figure-school{
+    justify-content: space-between;
 }
 
 .div--figure-school figcaption{
