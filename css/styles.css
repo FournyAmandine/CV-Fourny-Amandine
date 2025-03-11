@@ -129,20 +129,20 @@ a {
 }
 
 .menu01 {
-    background-image: url("./images/computer/SVG/icons/search.svg");
+    background-image: url("../images/computer/SVG/icons/search.svg");
     margin-left: 1.4375em;
 }
 
 .menu02 {
-    background-image: url("./images/computer/SVG/icons/pays.svg");
+    background-image: url("../images/computer/SVG/icons/pays.svg");
 }
 
 .menu03 {
-    background-image: url("./images/computer/SVG/icons/compte.svg");
+    background-image: url("../images/computer/SVG/icons/compte.svg");
 }
 
 .menu04 {
-    background-image: url("./images/computer/SVG/icons/cart.svg");
+    background-image: url("../images/computer/SVG/icons/cart.svg");
 }
 
 .text {
@@ -153,7 +153,7 @@ a {
     margin-left: 11.3333333333em;
     margin-right: 1.666667em;
     padding: 0.8125em 3.625em 0.8125em 5.125em;
-    background-image: url("./images/computer/SVG/logo.svg");
+    background-image: url("../images/computer/SVG/logo.svg");
     background-size: 26px;
     background-repeat: no-repeat;
     background-position: 1.375em 0.25em;
@@ -167,24 +167,24 @@ a {
 }
 
 .icone01 {
-    background-image: url("./images/computer/SVG/icons/parcours.svg");
+    background-image: url("../images/computer/SVG/icons/parcours.svg");
 }
 
 .icone02 {
-    background-image: url("./images/computer/SVG/icons/qualites.svg");
+    background-image: url("../images/computer/SVG/icons/qualites.svg");
 }
 
 .icone03 {
-    background-image: url("./images/computer/SVG/icons/competences.svg");
+    background-image: url("../images/computer/SVG/icons/competences.svg");
     padding-top: 2.6875em;
 }
 
 .icone04 {
-    background-image: url("./images/computer/SVG/icons/valeurs.svg");
+    background-image: url("../images/computer/SVG/icons/valeurs.svg");
 }
 
 .icone05 {
-    background-image: url("./images/computer/SVG/icons/projets.svg");
+    background-image: url("../images/computer/SVG/icons/projets.svg");
     margin-right: 0;
 }
 
@@ -277,7 +277,7 @@ section.nav {
 
 .personal-information a.link--projects {
     padding: 1.25em 3em 1.25em 5.125em;
-    background-image: url("./images/computer/SVG/logo.svg");
+    background-image: url("../images/computer/SVG/logo.svg");
     background-repeat: no-repeat;
     background-position: 1.375em 0.625em;
     margin: 2.4375em auto 0.9375em;
@@ -378,7 +378,7 @@ section.nav {
 
 .school-career {
     background-color: var(--second-main-color);
-    background-image: url("./images/computer/SVG/fond-school-careersvg.svg");
+    background-image: url("../images/computer/SVG/fond-school-careersvg.svg");
     background-repeat: no-repeat;
     padding-top: 5.4375em;
     background-size: 100%;
@@ -448,7 +448,7 @@ section.nav {
 }
 
 .qualities {
-    background-image: url("./images/computer/SVG/fond-qualities.svg");
+    background-image: url("../images/computer/SVG/fond-qualities.svg");
     background-repeat: no-repeat;
     padding-bottom: 1.25em;
     background-size: 100%;
@@ -470,7 +470,7 @@ section.nav {
 .qualities a.discover-me {
     padding: 1.375em 3.5em 1.375em 4.4375em;
     border: 0.125em var(--main-text-color) solid;
-    background-image: url("./images/computer/SVG/logo.svg");
+    background-image: url("../images/computer/SVG/logo.svg");
     background-repeat: no-repeat;
     background-position: 1.375em 0.8125em;
 }
@@ -576,7 +576,7 @@ li.item--slider-skill + li {
 
 .values {
     margin-top: 2.4375em;
-    background-image: url("./images/computer/SVG/fond-valeurs.svg");
+    background-image: url("../images/computer/SVG/fond-valeurs.svg");
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -892,27 +892,27 @@ small, label {
 }
 
 .insta {
-    background-image: url("./images/computer/SVG/insta.svg");
+    background-image: url("../images/computer/SVG/insta.svg");
     background-position: center;
 }
 
 .facebook {
-    background-image: url("./images/computer/SVG/facebook.svg");
+    background-image: url("../images/computer/SVG/facebook.svg");
     width: 2.25em;
 }
 
 .twitter {
-    background-image: url("./images/computer/SVG/twitter.svg");
+    background-image: url("../images/computer/SVG/twitter.svg");
 }
 
 .youtube {
-    background-image: url("./images/computer/SVG/youtube.svg");
+    background-image: url("../images/computer/SVG/youtube.svg");
     width: 2.8125em;
     height: 2.8125em;
 }
 
 .pinterest {
-    background-image: url("./images/computer/SVG/pinterest.svg");
+    background-image: url("../images/computer/SVG/pinterest.svg");
 }
 
 .list_item-secondary-nav-site {
