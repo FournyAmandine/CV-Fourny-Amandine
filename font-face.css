@@ -1,11 +1,12 @@
+
 @font-face {
-    font-family: 'Vollkorn', serif;
+    font-family: "Vollkorn";
     font-weight: 400;
-    src: url("fonts/vollkorn-4-105/WOFF/Vollkorn-Regular.woff") format("woff");
+    src: url(./fonts/Vollkorn/static/Vollkorn-Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'Vollkorn', serif;
+    font-family: "Vollkorn";
     font-weight: 900;
-    src: url("fonts/vollkorn-4-105/WOFF/Vollkorn-Black.woff") format('woff');
+    src: url(./fonts/Vollkorn/static/Vollkorn-Black.ttf) format('truetype');
 }
