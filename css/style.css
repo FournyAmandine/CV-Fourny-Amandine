@@ -1,0 +1,227 @@
+:root {
+    --main-color: #FFD200;
+    --main-text-color: #5A1F06;
+    --main-background-color: #F4F6FA;
+    --second-main-color: #015F20;
+    --third-main-color: #D70200;
+    --light-green: #05A833;
+    --light-blue: #0E74E1;
+    --dark-blue: #121661;
+    --header-text-color: #040607;
+    --orange: #E77A00;
+    --red: #AE3434;
+    --purple: #880997;
+    --green: #28923D;
+    --border-orange: #DD5C05;
+    --border-red: #FB0200;
+    --border-purple: #D00DE6;
+    --border-green: #007517;
+    --border-blue: #044A95;
+    --border-yellow: #DCB404;
+    --input-background: #D9D9D9;
+    --input-text: #6A737F;
+    --border-grey: #BAC1CA;
+}
+
+.hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+}
+
+
+main {
+    font-family: Vollkorn, serif;
+    background-color: white;
+}
+
+.roboto{
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.black{
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.projects, .personal-information article, .school-career, .div--article, .list--slider-skills, .values, .form, .section--reviews h2, .div--item-01 {
+    text-align: center;
+}
+
+.subtitle {
+    color: black;
+    font-weight: 500;
+    line-height: 1.625em;
+}
+
+.p-me, .personal-information, .personal-information a.link--qualities, .second-part .article-hobby a, .school-career figcaption, .projects a, .div--articles-projects article {
+    color: white;
+}
+
+.border {
+    border-radius: 2.5em;
+}
+
+.div--offers {
+    color: var(--header-text-color);
+    text-align: center;
+}
+
+main, a {
+    color: var(--main-text-color);
+}
+
+.article-school {
+    background-color: var(--main-color);
+}
+
+.offer-hard-skills, .article-me {
+    background-color: var(--light-green);
+}
+
+.article-hobby, .offer-soft-skills {
+    background-color: var(--third-main-color);
+}
+
+footer {
+    background-color: var(--main-background-color);
+}
+
+.personal-information {
+    background-color: var(--second-main-color);
+}
+
+.projects, .form, .section--reviews {
+    background-color: var(--main-background-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.offer-hard-skills{
+    padding: 0.4375em 1.8125em;
+}
+
+.offer-soft-skills{
+    color: white;
+    padding: 0.4375em 0 1.8125em;
+    background-image: url("images/phone/svg/icons/Arrow_right-1.svg");
+}
+
+.fleche{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.droite{
+    transform: rotate(-45deg);
+}
+
+.gauche{
+    transform: rotate(135deg);
+}
+
+.primary-nav a, .primary-nav li, .personal-information a {
+    display: inline-block;
+}
+
+.primary-nav span {
+    visibility: hidden;
+}
+
+.primary-nav-other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.4375em;
+}
+
+.list--primary-nav-text{
+    margin: 0.8125em 4.25em 0.8125em 4.875em;
+}
+
+.logo{
+    margin: 1.125em 3.8125em 1.125em 6.25em;
+}
+
+.menu{
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+.menu01 {
+    background-image: url("../images/phone/svg/icons/menu.svg");
+}
+
+.menu02 {
+    background-image: url("../images/phone/svg/icons/search.svg");
+}
+
+.menu03 {
+    background-image: url("../images/phone/svg/icons/cart.svg");
+}
+
+.text{
+    font-size: 0.75em;
+}
+
+.text01{
+    margin-right: 8.3333333333em;
+    max-width: 21.8340611354%;
+    background-image: url("images/phone/svg/logo-s.svg");
+}
+
+.text02{
+    text-align: center;
+    max-width: 31.8777292576%;
+}
+
+.personal-information h2 {
+    flex-direction: column;
+}
+
+.second-part {
+    justify-content: center;
+}
+
+.second-part a {
+    text-decoration: underline;
+    text-underline-offset: 50%;
+    text-decoration-thickness: 10%;
+}
+
+.second-part .article-school {
+    color: var(--main-text-color);
+}
+
+.second-part .article-me a {
+    color: var(--header-text-color);
+}
+
+.second-part .article-hobby a {
+    text-decoration-color: var(--main-color);
+}
+
+.outdoor_icone {
+    position: absolute;
+}

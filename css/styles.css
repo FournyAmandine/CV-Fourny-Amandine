@@ -104,7 +104,7 @@ a {
     visibility: hidden;
 }
 
-.primary-nav a, .primary-nav li {
+.primary-nav a, .primary-nav li, .personal-information a {
     display: inline-block;
 }
 
@@ -271,10 +271,6 @@ section.nav {
     padding: 1.5em;
 }
 
-.personal-information a {
-    display: inline-block;
-}
-
 .personal-information a.link--projects {
     padding: 1.25em 3em 1.25em 5.125em;
     background-image: url("../images/computer/SVG/logo.svg");
@@ -294,10 +290,6 @@ section.nav {
 .profile-photo img {
     justify-content: flex-end;
     margin: -0.3125em 5.625em auto auto;
-}
-
-.personal-information h2 {
-    flex-direction: column;
 }
 
 .words, .personal-information h2 {
@@ -326,10 +318,6 @@ section.nav {
 
 .black {
     font-weight: 900;
-}
-
-.second-part {
-    justify-content: center;
 }
 
 .second-part h3 {
