@@ -59,7 +59,7 @@
                     </ul>
                 </li>
                 <li>
-                    <ul class="list--primary-nav-text">
+                    <ul class="list--primary-nav-text container">
                         <li class="list--items text text01 black border"><a href="#form">voir mon parcours</a></li>
                         <li class="list--items text text02 black border"><a href="#following">voir mes compétences</a>
                         </li>
@@ -106,8 +106,8 @@
 </header>
 <main>
     <section class="personal-information">
-        <div class="first-part container">
-            <div>
+        <div class="first-part">
+            <div class="container name">
                 <p class="p-me">je suis</p>
                 <h2 class="my-name container"><span itemprop="givenName">Amandine</span> <span itemprop="familyName">Fourny</span>
                     <span
@@ -117,7 +117,7 @@
                 <a class="link--qualities black border" href="#qualities" title="Cliquez pour voir mes qualités">Voir
                     mes qualités</a>
             </div>
-            <aside class="profile-photo">
+            <aside class="profile-photo container">
                 <h3 class="hidden">photo de profil</h3>
                 <img src="images/phone/svg/profil.svg"
                      alt="ma photo de profil avec des petits bonbons rouges, verts et blancs autour">
@@ -177,51 +177,53 @@
         </p>
         <a class="black border" href="#" title="en découvrir plus sur mon parcours">en savoir plus sur mon parcours</a>
         <div class="div--figure-school container">
-            <figure class="orange-2017">
+            <i class="fleche gauche2"></i>
+            <figure class="orange-2017 v-hidden">
                 <img src="images/all/PNG/artiste.png"
                      alt="petit bonhomme avec un bonnet et une écharpe qui se tient devant une toile et tient une palette de peinture"
                 >
-                <figcaption class="black">
+                <!--<figcaption class="black">
                     <time datetime="2017">2017</time>
-                </figcaption>
+                </figcaption>-->
             </figure>
-            <figure class="blue-2020">
+            <figure class="blue-2020 v-hidden">
                 <img src="images/all/PNG/vendeur.png"
                      alt="petit bonhomme en chemise avec une cravate qui tient une offre dans sa main et un petit carnet dans l'autre et qui sourit"
                 >
-                <figcaption class="black">
+                <!--<figcaption class="black">
                     <time datetime="2020">2020</time>
-                </figcaption>
+                </figcaption>-->
             </figure>
             <figure class="yellow-2022">
                 <img src="images/all/PNG/cineaste.png" alt="petit bonhomme devant une caméra sur pied qui sourit">
-                <figcaption class="black">
+                <!--<figcaption class="black">
                     <time datetime="2022">2022</time>
-                </figcaption>
+                </figcaption>-->
             </figure>
-            <figure class="red-2023">
+            <figure class="red-2023 v-hidden">
                 <img src="images/all/PNG/etudiant.png"
                      alt="petit bonhomme avec un sac à dos et qui tient une farde dans sa main qui sourit">
-                <figcaption class="black">
+                <!--<figcaption class="black">
                     <time datetime="2023">2023</time>
-                </figcaption>
+                </figcaption>-->
             </figure>
-            <figure class="purple-2024">
+            <figure class="purple-2024 v-hidden">
                 <img src="images/all/PNG/permis.png"
                      alt="petit bonhomme content qui tient son permis et son bulletin dans chaque main et qui sourit"
                 >
-                <figcaption class="black">
+                <!--<figcaption class="black">
                     <time datetime="2024">2024</time>
-                </figcaption>
+                </figcaption>-->
             </figure>
-            <figure class="green-2025">
+            <figure class="green-2025 v-hidden">
                 <img src="images/all/PNG/web.png"
                      alt="petit bonhomme qui est devant son odinateur sur le bureau avec des lunettes, qui sourit et qui lève les mains fièrement"
                 >
-                <figcaption class="black">
+                <!--<figcaption class="black">
                     <time datetime="2025">2025</time>
-                </figcaption>
+                </figcaption>-->
             </figure>
+            <i class="fleche droite2"></i>
         </div>
     </section>
     <section id="qualities" class="qualities">
@@ -239,10 +241,10 @@
             <aside class="aside--quality container">
                 <h3 class="hidden">explication des qualités</h3>
                 <div class="container">
-                    <img class="fleche" src="./images/phone/svg/fleche.svg" alt="fleche jaune">
+                    <img class="arrow" src="./images/phone/svg/fleche.svg" alt="fleche jaune">
                     <p class="roboto black">choisissez la qualité que vous voulez découvrir</p>
                 </div>
-                <img src="images/phone/svg/autonome-txt.svg"
+                <img class="quality-ex" src="images/phone/svg/autonome-txt.svg"
                      alt="texte de l'explication de la qualités sur fond rose en dégradé 'je tends à acquérir une autonomie rapidement afin d’aider au mieux l’équipe et ne pas attendre que l’on me dise quoi faire'">
             </aside>
         </div>
@@ -256,7 +258,7 @@
                     dont je suis capable
                     seule</a>
             </article>
-            <article class="article--quality-motivation">
+            <article class="article--quality-motivation v-hidden">
                 <img src="images/phone/svg/motivee.svg"
                      alt="texte 'motivée' sur fond vert avec des petits bonbons vert clair et vert foncé autour"
                 >
@@ -266,7 +268,7 @@
                     qui me fait
                     persévérer</a>
             </article>
-            <article class="article--quality-discretion">
+            <article class="article--quality-discretion v-hidden">
                 <img src="images/phone/svg/discrete.svg"
                      alt="texte 'discrète' sur fond bleu avec des petits bonbons bleus et gris autour">
                 <h3 class="black">une touche de discrètion</h3>
@@ -275,7 +277,7 @@
                     qui me rend
                     efficace</a>
             </article>
-            <article class="article--quality-responsability">
+            <article class="article--quality-responsability v-hidden">
                 <img src="images/phone/svg/responsable.svg"
                      alt="texte 'responsable' sur fond jaune avec des petits bonbons oranges et jaunes autour"
                 >
@@ -285,18 +287,21 @@
                     que je gère dans ma
                     vie</a>
             </article>
+            <i class="fleche droite3"></i>
         </div>
     </section>
     <section id="skills" class="skills">
-        <aside class="aside--mockup">
+        <aside class="aside--mockup container">
             <h3 class="hidden">mockup</h3>
             <img src="images/phone/svg/css.svg" alt="ordinateur avec du code et un fond de bureau">
         </aside>
         <div class="skills-title">
-            <h2>je maitrise <span itemprop="skills">css</span>, la structure, les propriétés, les sélecteurs...
-            </h2>
-            <p class="subtitle roboto">je peux faire le fichier css pour styliser un site. Penser au média queeries,
-                mobile first...</p>
+            <div>
+                <h2>je maitrise <span itemprop="skills">css</span>, la structure, les propriétés, les sélecteurs...
+                </h2>
+                <p class="subtitle roboto">je peux faire le fichier css pour styliser un site. Penser au média queeries,
+                    mobile first...</p>
+            </div>
             <div class="div--skills">
                 <ul class="list--slider-skills container">
                     <li class="item--slider-skill html">
@@ -393,23 +398,23 @@
                      alt="icone de quatres mains qui se tiennent en blanc sur fond vert">
                 <h3 class="roboto">Entraide</h3>
             </article>
-            <article class="article--value-personal-development">
+            <article class="article--value-personal-development v-hidden">
                 <img src="images/phone/svg/dev-perso.svg"
                      alt="icone d'une personne avec des flèches sur le côté en brun sur fond jaune">
                 <h3 class="roboto">Développement personnel</h3>
             </article>
-            <article class="article--value-ambience">
+            <article class="article--value-ambience v-hidden">
                 <img src="images/phone/svg/ambiance.svg" alt="texte 'good vibes' en blanc sur fond rouge"
                 >
                 <h3 class="roboto">Ambiance</h3>
             </article>
-            <article class="article--value-ideal">
+            <article class="article--value-ideal v-hidden">
                 <img src="images/phone/svg/ideal.svg"
                      alt="icone d'une personne sur 3 étoiles en blanc sur fond vert"
                 >
                 <h3 class="roboto">Idéal</h3>
             </article>
-            <article class="article--value-variety">
+            <article class="article--value-variety v-hidden">
                 <img src="images/phone/svg/variete.svg"
                      alt="deux ampoules différentes l'une à côté de l'autre en brun sur fond jaune">
                 <h3 class="roboto">Variété</h3>
@@ -487,21 +492,21 @@
                 <img class="truspilot" src="images/phone/svg/truspilot.svg"
                      alt="logo Truspilot avec une étoile devant">
             </div>
-            <div class="div--item-02 container">
+            <div class="div--item-02 container v-hidden">
                 <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
                 <p class="title" itemprop="name">sérieuse</p>
                 <p itemprop="reviewBody">cette fille travaille sérieusement et professionnellement</p>
                 <small><em class="black" itemprop="author">Jean</em>, <span itemprop="sdDatePublished">19 octobre</span></small>
                 <p class="reviews">Les avis populaires</p>
             </div>
-            <div class="div--item-03 container">
+            <div class="div--item-03 container v-hidden">
                 <img itemprop="reviewRating" src="images/computer/SVG/5-etoiles.svg" alt="">
                 <p class="title" itemprop="name">souriante</p>
                 <p itemprop="reviewBody">cette fille est souriante et on voit qu'elle aime son travail</p>
                 <small><em class="black" itemprop="author">Laurent</em>, <span
                         itemprop="sdDatePublished">20 décembre</span></small>
             </div>
-            <div class="div--item-04 container">
+            <div class="div--item-04 container v-hidden">
                 <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
                 <p class="title" itemprop="name">rapide</p>
                 <p itemprop="reviewBody">le travail a été rapide effectué!</p>
@@ -528,7 +533,7 @@
             <div class="details">
                 <p class="title black">mon téléphone</p>
                 <p itemprop="telephone">0472 25 89 94</p>
-                <p>Du lundi au venredi, de 9h à 20h</p>
+                <p class="day">Du lundi au venredi, de 9h à 20h</p>
             </div>
         </div>
     </div>
@@ -549,23 +554,25 @@
         </aside>
         <nav class="secondary-nav roboto container">
             <h2 class="hidden">navigation secondaire</h2>
-            <ul class="list--secondary-nav-">
-                <li class="list_item-secondary-nav list_item-secondary-nav-projets">découvrir d'autres projets
+            <ul class="list--secondary-nav">
+                <li class="list_item-secondary-nav list_item-secondary-nav-projets black">découvrir d'autres projets
                     <ul class="list--other-projects container">
-                        <li class="list_item_other-project">animation 3d</li>
-                        <li class="list_item_other-project">flyers 2d</li>
-                        <li class="list_item_other-project">wordpress</li>
+                        <li class="list_item_other-project v-hidden">animation 3d</li>
+                        <li class="list_item_other-project v-hidden">flyers 2d</li>
+                        <li class="list_item_other-project v-hidden">wordpress</li>
                     </ul>
+                    <i class="fleche bas1"></i>
                 </li>
-                <li class="list_item-secondary-nav list_item-secondary-nav-site">site dé reférence
+                <li class="list_item-secondary-nav list_item-secondary-nav-site black">site de reférence
                     <ul class="site container">
-                        <li class="link--site"><a href="https://www.mms.com/fr-be"
+                        <li class="link--site v-hidden"><a href="https://www.mms.com/fr-be"
                                                   title="Cliquez pour aller sur le site de référence de ce CV">M&Ms</a>
                         </li>
                     </ul>
+                    <i class="fleche bas2"></i>
                 </li>
-                <li class="list_item-secondary-nav list_item-secondary-nav-networks">suivez-moi
-                    <ul class="list--social-networks">
+                <li class="list_item-secondary-nav list_item-secondary-nav-networks black">suivez-moi
+                    <ul class="list--social-networks container">
                         <li class="list_item_social-network">
                             <a class="insta" href="#" title="Cliquez pour aller sur mon compte instagram"><span>
                             instagram

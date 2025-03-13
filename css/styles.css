@@ -516,7 +516,7 @@ section.nav {
     display: inline-block;
     text-align: left;
     padding: 0 4.75em 0.4375em 2.3125em;
-    background-image: url("./images/all/Arrow_right.svg");
+    background-image: url("../images/all/SVG/Arrow_right.svg");
     background-repeat: no-repeat;
     background-position: right;
     border-bottom: 0.125em solid var(--main-color);
@@ -688,6 +688,10 @@ input[type="submit"] {
     margin-bottom: 3.04166666667em;
 }
 
+.contact{
+    width: 80.2666666667%;
+}
+
 input[type="text"] {
     margin-bottom: 3.75em;
     border: none;
@@ -701,7 +705,6 @@ textarea {
 
 input[type="text"], textarea {
     background-color: var(--input-background);
-    width: 759px;
     opacity: 0.15;
     position: relative;
 }
