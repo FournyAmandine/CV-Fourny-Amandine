@@ -1,0 +1,240 @@
+@import "breakpoints";
+
+.footer {
+  background-color: var(--main-background-color);
+
+  .all {
+    width: 90%;
+    margin: auto;
+  }
+
+  &__contact {
+    margin: 1.25em 0 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    font-family: Roboto, sans-serif;
+  }
+
+  &__address, &__phone {
+    display: flex;
+    gap: 1.25em;
+    align-items: center;
+  }
+
+  &__details {
+    &-title {
+      font-weight: 800;
+      margin-bottom: 0.5em;
+    }
+
+    &-content {
+      margin-bottom: 0.3125em;
+      font-weight: 900;
+      color: var(--main-text-color);
+      text-decoration: underline;
+      text-decoration-color: var(--main-color);
+    }
+
+    &-content, &-text {
+      font-size: 0.75em;
+    }
+  }
+
+  &__following {
+    &-form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2.5em;
+    }
+
+    &-text {
+      font-size: 1.5em;
+      color: var(--main-text-color);
+      width: 70%;
+      font-weight: 900;
+      margin-bottom: 2.08333333333em;
+    }
+
+    &-input {
+      width: 100%;
+      border: none;
+      border-bottom: var(--border-grey) solid 3px;
+      background: none;
+      margin-bottom: 2.1875em;
+    }
+
+    &-label {
+      font-weight: 700;
+      color: var(--input-text);
+      font-family: Roboto, sans-serif;
+      padding-bottom: 0.625em;
+    }
+
+    &-small {
+      font-size: 0.75em;
+      line-height: 1.5em;
+      color: var(--input-text);
+      font-weight: 800;
+      margin-bottom: 4.7857142857em;
+      font-family: Roboto, sans-serif;
+    }
+
+    &-submit {
+      font-size: 1.25em;
+      padding: 0.9em 5.35em;
+      margin-left: -0.3em;
+      display: block;
+      color: var(--main-text-color);
+      background-color: var(--main-color);
+      border: none;
+      font-weight: 900;
+      font-family: Vollkorn, serif;
+      border-radius: 2.875em;
+    }
+  }
+  &__sites, &__other{
+    &-list{
+      display: none;
+    }
+  }
+  &__social{
+    &-list{
+      display: flex;
+      gap: 1.375em;
+      span{
+        visibility: hidden;
+      }
+      *{
+      background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        padding: 0.625em 0;
+        width: 3.07142857143em;
+    }
+    }
+    &-insta{
+      background-image: url(../images/phone/svg/insta.svg);
+    }
+    &-facebook{
+      background-image: url(../images/phone/svg/facebook.svg);
+    }
+    &-twitter{
+      background-image: url(../images/phone/svg/twitter.svg);
+    }
+    &-youtube{
+      background-image: url(../images/phone/svg/youtube.svg);
+    }
+    &-pinterest{
+      background-image: url(../images/phone/svg/pinterest.svg);
+    }
+  }
+  &__nav{
+    color: var(--main-text-color);
+    font-size: 0.875em;
+    font-weight: 900;
+    &-item{
+    }
+    &-item:first-child{
+      margin-bottom: 1.5714285714em;
+    }
+    &-item:last-child{
+      margin-top: 2.1428571429em;
+    }
+  }
+  &__btn{
+    background: none;
+    border: none;
+    font-weight: 900;
+    font-family: Vollkorn, serif;
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__arrow{
+    font-size: 0.625em;
+    color: var(--main-text-color);
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .footer{
+    &__contact{
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer{
+    &__following{
+      display: flex;
+      gap: 5.625em;
+      border-top: solid var(--border-grey) 1px;
+      padding-top: 2.8125em;
+      &-aside{
+        width: 30%;
+      }
+      &-text{
+        width: 100%;
+        font-size: 1.5em;
+      }
+      &-small{
+        color: black;
+      }
+      &-input{
+        border-bottom: var(--border-grey) solid 1px;
+      }
+      &-label{
+        font-weight: 400;
+      }
+    }
+    &__nav{
+      font-family: Roboto, sans-serif;
+      color: black;
+      font-weight: 500;
+      width: max-content;
+      &-list{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 6.25em;
+      }
+      li{
+        width: max-content;
+      }
+      &-item:last-child{
+        margin-top: 0;
+      }
+    }
+    &__arrow{
+      display: none;
+    }
+    &__btn{
+      width: max-content;
+      font-family: Roboto, sans-serif;
+    }
+    &__sites, &__other{
+      &-list{
+        display: block;
+        margin-left: 0.3571428571em;
+        margin-top: 1.4285714286em;
+        li{
+          margin-bottom: 1.07142857143em;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+

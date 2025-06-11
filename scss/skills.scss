@@ -1,0 +1,119 @@
+@import "breakpoints";
+
+
+  .skills{
+    .all{
+      margin: auto;
+    }
+    margin-top: 4.375em;
+    &__mockup{
+      &-container{
+        img{
+          width: 100%;
+        }
+      }
+    }
+    &__content{
+      width: 90%;
+      margin: auto;
+    }
+    &__title{
+      font-size: 1.875em;
+      color: var(--main-text-color);
+      line-height: 1em;
+      margin-bottom: 0.3333333333em;
+    }
+    &__text{
+      font-family: Roboto, sans-serif;
+      line-height: 1.5em;
+      margin-bottom: 5.625em;
+    }
+    &__slide{
+      &-articles{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        gap: 2em;
+        padding-bottom: 5em;
+        margin: 0 -0.71875em 0;
+        scrollbar-width: none;
+        -ms-overflow-style: none; // Firefox
+        &::-webkit-scrollbar {
+          display: none;          // Chrome, Safari
+        }
+        figure{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+        }
+        figcaption{
+          text-align: center;
+          font-size: 1.25em;
+          font-weight: 900;
+        }
+      }
+    }
+    &__slider{
+      height: 4px;
+      background: var(--main-text-color);
+      pointer-events: none;
+      z-index: 10;
+      transform: translateX(0);
+      transition: transform 0.1s;
+    }
+  }
+
+
+@media (min-width: $tablet) {
+  .skills{
+    .all{
+      display: flex;
+    }
+    &__content{
+      width: 40%;
+      margin-top: 38%;
+      margin-left: -2.5em;
+    }
+    &__mockup{
+      width: 60%;
+    }
+    &__articles{
+      width: 240%;
+      margin-left: -120%;
+    }
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .skills{
+    &__content{
+      margin: 2vw 0 0;
+    }
+    &__mockup{
+      margin-top: -4.6875em;
+    }
+    &__title{
+      font-size: 2.75em;
+    }
+    &__slide{
+      &-articles{
+        gap: 5.3125em;
+      }
+    }
+    &__articles{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: $nav) {
+  .skills {
+    &__content {
+      margin: 7.875em 0 0;
+    }
+  }
+}

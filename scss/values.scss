@@ -1,0 +1,163 @@
+@import "breakpoints";
+
+
+  .values {
+    .all{
+      width: 90%;
+      margin: 6.75em auto 0;
+    }
+    background-image: url(../images/phone/svg/fond-values.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    text-align: center;
+    &__head {
+      &-title {
+        font-size: 1.875em;
+        color: var(--main-text-color);
+        margin-bottom: 0.6666666667em;
+      }
+
+      &-subtitle {
+        font-family: Roboto, sans-serif;
+        line-height: 1.5em;
+        margin-bottom: 5.625em;
+      }
+    }
+
+    &__articles {
+      display: flex;
+      overflow-x: auto;
+      gap: 6.25em;
+      width: 60%;
+      margin: auto auto 7.625em;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none; // Firefox
+      &::-webkit-scrollbar {
+        display: none;          // Chrome, Safari
+      }
+      .active {
+
+      }
+      div{
+        height: 186px;
+        width: 186px;
+        background-repeat: no-repeat;
+        margin: auto auto 3.75em;
+      }
+      article{
+        flex: 0 0 80%;
+        width: 100%;
+        scroll-snap-align: center;
+      }
+      article:first-child{
+        margin-left: 1.875em;
+      }
+      article:last-child{
+        margin-right: 1.875em;
+      }
+      img{
+        width: 100%;
+        margin: auto auto 5.625em;
+      }
+    }
+    &__aid{
+      background-image: url(../images/phone/svg/entraide.svg);
+      &:hover{
+        background-image: url(../images/phone/svg/entraide-text.svg);
+      }
+    }
+    &__development{
+      background-image: url(../images/phone/svg/dev-perso.svg);
+      &:hover{
+        background-image: url(../images/phone/svg/dev-perso-text.svg);
+      }
+    }
+    &__ambience{
+      background-image: url(../images/phone/svg/ambiance.svg);
+      &:hover{
+        background-image: url(../images/phone/svg/ambiance-text.svg);
+      }
+    }
+    &__ideal{
+      background-image: url(../images/phone/svg/ideal.svg);
+      &:hover{
+        background-image: url(../images/phone/svg/ideal-text.svg);
+      }
+    }
+    &__variety{
+      background-image: url(../images/phone/svg/variete.svg);
+      &:hover{
+        background-image: url(../images/phone/svg/variete-text.svg);
+      }
+    }
+    &__title{
+      font-family: Roboto, sans-serif;
+    }
+    &__slider{
+      height: 4px;
+      background: var(--main-text-color);
+      width: 10%;
+      pointer-events: none;
+      z-index: 10;
+      transform: translateX(0);
+      transition: transform 0.1s;
+    }
+  }
+
+
+@media (min-width: $tablet) {
+  .values{
+    background-image: url(../images/computer/SVG/fond-valeurs.svg);
+    &__head{
+      &-subtitle{
+        margin-bottom: 1.875em;
+      }
+    }
+    &__articles{
+      scroll-behavior: smooth;
+      width: 90%;
+      margin: auto;
+      padding-bottom: 10.3125em;
+      article{
+        flex: 0 0 20%;
+        scroll-snap-align: center;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-top: 4.75em;
+      }
+      .active{
+        margin-top: 0;
+      }
+    }
+    &__article{
+      &-aid{
+        margin-left: 1.25em;
+      }
+      &-variety{
+        margin-right: 1.25em;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .values{
+    &__articles{
+      width: 85%;
+      article{
+        flex: 0 0 22%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $nav) {
+  .values{
+    &__articles{
+      width: 65%;
+    }
+  }
+}

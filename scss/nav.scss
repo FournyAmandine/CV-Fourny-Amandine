@@ -1,0 +1,185 @@
+@import "breakpoints";
+
+  .nav{
+    .all{
+      margin: auto;
+    }
+    &__comp{
+      display: none;
+    }
+    &__other, &__text{
+      display: flex;
+    }
+    &__other{
+      margin: 1.3125em auto;
+      width: 87.7333333333%;
+      justify-content: space-between;
+      span{
+        visibility: hidden;
+      }
+      &-burger, &-search, &-cart{
+        background-repeat: no-repeat;
+      }
+      &-burger{
+        background-image: url(../images/phone/svg/icons/menu.svg);
+      }
+      &-search{
+        background-image: url(../images/phone/svg/icons/search.svg);
+      }
+      &-cart{
+        background-image: url(../images/phone/svg/icons/cart.svg);
+        margin-left: -25%;
+      }
+    }
+    &__text{
+      justify-content: space-between;
+      width: 83.9333333333%;
+      margin: auto auto 1.875em 1.625em;
+      a{
+        text-decoration: none;
+        color: var(--main-text-color);
+        font-size: 0.75em;
+        font-weight: 800;
+        width: 75%;
+        display: inline-block;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        line-height: 1.25em;
+      }
+      &-career{
+        background-image: url(../images/phone/svg/logo-s.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 2.5em;
+      }
+    }
+  }
+
+
+@media (min-width: $tablet) {
+  .nav{
+    &__comp{
+      &-item:first-of-type{
+        display: none;
+      }
+      display: block;
+      &-container{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        gap: 5%;
+        img{
+          margin-right: 0.625em;
+          display: inline-block;
+        }
+      }
+      &-list{
+        display: flex;
+      }
+      &-icones{
+        display: none;
+      }
+      &-other{
+        display: flex;
+        margin: 2.5em auto 1.875em;
+        align-items: center;
+        gap: 1%;
+
+        span{
+          visibility: hidden;
+        }
+        &-form, &-following{
+          background-color: var(--main-background-color);
+          border-radius: 2.5em;
+          padding: 0.8125em 2.875em;
+          a{
+            text-decoration: none;
+            color: var(--main-text-color);
+            font-weight: 700;
+            font-family: Roboto, sans-serif;
+            font-size: 0.75em;
+          }
+        }
+        &-form{
+          background-image: url(../images/computer/SVG/logo.svg);
+          background-repeat: no-repeat;
+          padding-left: 5.125em;
+          background-position: 0.625em 0.375em;
+        }
+        &-search, &-lang, &-account, &-cart{
+          background-repeat: no-repeat;
+          padding: 0.5em 0;
+          a{
+            display: block;
+            width: 1.75em;
+            margin-left: 1.07142857143em;
+          }
+        }
+        &-search{
+          background-image: url(../images/computer/SVG/icons/search.svg);
+          margin-left: 0.625em;
+        }
+        &-cart{
+          background-image: url(../images/computer/SVG/icons/cart.svg);
+        }
+        &-lang{
+          background-image: url(../images/computer/SVG/icons/pays.svg);
+          padding-top: 0.375em;
+        }
+        &-account{
+          background-image: url(../images/computer/SVG/icons/compte.svg);
+        }
+      }
+    }
+    &__primary{
+      display: none;
+    }
+  }
+}
+
+
+
+@media (min-width: $nav) {
+  .nav{
+    &__comp{
+      &-container{
+        width: 100%;
+      }
+      &-item:first-of-type{
+        display: block;
+        margin: 5em auto 0;
+      }
+      &-icones{
+        display: flex;
+        align-items: baseline;
+        a{
+          text-decoration: none;
+          color: var(--main-text-color);
+          font-size: 0.875em;
+          font-weight: 800;
+          margin-right: 2.8571428571em;
+          background-repeat: no-repeat;
+          padding-top: 3.5714285714em;
+          background-position: center 0;
+        }
+      }
+      &-school a{
+        background-image: url("../images/computer/SVG/icons/parcours.svg");
+      }
+      &-skills a{
+        background-image: url("../images/computer/SVG/icons/competences.svg");
+      }
+      &-values a{
+        background-image: url("../images/computer/SVG/icons/valeurs.svg");
+      }
+      &-projects a{
+        background-image: url("../images/computer/SVG/icons/projets.svg");
+        margin-right: 6.7857142857em
+      }
+      &-qualities a{
+        background-image: url("../images/computer/SVG/icons/qualites.svg");
+      }
+    }
+  }
+}

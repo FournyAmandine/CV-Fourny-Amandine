@@ -1,0 +1,32 @@
+@import "breakpoints";
+
+@media (min-width: $mobile) {
+  .fleche {
+    &__droite, &__gauche{
+      border: solid white;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 5px;
+      position: absolute;
+      top: 1em;
+    }
+    &__droite{
+      transform: rotate(-45deg);
+      right: 0.75em;
+    }
+    &__gauche{
+      transform: rotate(135deg);
+      left: 1.4375em;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .fleche {
+    &__droite, &__gauche{
+      display: none;
+    }
+  }
+}
+
+

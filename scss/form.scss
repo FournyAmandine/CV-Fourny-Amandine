@@ -1,0 +1,70 @@
+@import "breakpoints";
+
+
+  .form{
+    background-color: var(--main-background-color);
+    text-align: center;
+    .all{
+      padding-top: 4.375em;
+      width: 90%;
+      margin: auto;
+    }
+    &__title{
+      font-size: 1.875em;
+      color: var(--main-text-color);
+    }
+    &__subtitle{
+      line-height: 1.5em;
+      margin: 3em auto;
+    }
+    &__container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+    }
+    &__submit{
+      background-color: var(--main-color);
+      border: none;
+      padding: 0.75em 3.04166666667em;
+      font-size: 1.25em;
+      font-weight: 900;
+      font-family: Vollkorn, serif;
+      border-radius: 2.875em;
+      margin: 1.9166666667em auto 3.04166666667em;
+      color: var(--main-text-color);}
+
+    &__input {
+      margin-bottom: 3.75em;
+      border: none;
+      border-bottom: 0.07em solid black;
+      height: 2.5em;
+    }
+
+    &__text {
+      border: 0.0625em solid black;
+    }
+
+    &__input, &__text {
+      background-color: var(--input-background);
+      opacity: 0.15;
+      position: relative;
+      width: 100%;
+    }
+    &__label {
+      color: var(--input-text);
+      font-weight: 300;
+      position: absolute;
+      padding: 0.8125em 0 0 0.1875em;
+    }
+  }
+
+
+@media (min-width: $desktop) {
+  .form{
+    .all{
+      width: 60%;
+    }
+  }
+}
