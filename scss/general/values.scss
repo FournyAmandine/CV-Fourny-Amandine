@@ -1,4 +1,4 @@
-@import "breakpoints";
+@import "../settings/breakpoints";
 
 
   .values {
@@ -6,7 +6,7 @@
       width: 90%;
       margin: 6.75em auto 0;
     }
-    background-image: url(../images/phone/svg/fond-values.svg);
+    background-image: url(../../images/phone/svg/fond-values.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -63,33 +63,33 @@
       }
     }
     &__aid{
-      background-image: url(../images/phone/svg/entraide.svg);
+      background-image: url(../../images/phone/svg/entraide.svg);
       &:hover{
-        background-image: url(../images/phone/svg/entraide-text.svg);
+        background-image: url(../../images/phone/svg/entraide-text.svg);
       }
     }
     &__development{
-      background-image: url(../images/phone/svg/dev-perso.svg);
+      background-image: url(../../images/phone/svg/dev-perso.svg);
       &:hover{
-        background-image: url(../images/phone/svg/dev-perso-text.svg);
+        background-image: url(../../images/phone/svg/dev-perso-text.svg);
       }
     }
     &__ambience{
-      background-image: url(../images/phone/svg/ambiance.svg);
+      background-image: url(../../images/phone/svg/ambiance.svg);
       &:hover{
-        background-image: url(../images/phone/svg/ambiance-text.svg);
+        background-image: url(../../images/phone/svg/ambiance-text.svg);
       }
     }
     &__ideal{
-      background-image: url(../images/phone/svg/ideal.svg);
+      background-image: url(../../images/phone/svg/ideal.svg);
       &:hover{
-        background-image: url(../images/phone/svg/ideal-text.svg);
+        background-image: url(../../images/phone/svg/ideal-text.svg);
       }
     }
     &__variety{
-      background-image: url(../images/phone/svg/variete.svg);
+      background-image: url(../../images/phone/svg/variete.svg);
       &:hover{
-        background-image: url(../images/phone/svg/variete-text.svg);
+        background-image: url(../../images/phone/svg/variete-text.svg);
       }
     }
     &__title{
@@ -109,7 +109,7 @@
 
 @media (min-width: $tablet) {
   .values{
-    background-image: url(../images/computer/SVG/fond-valeurs.svg);
+    background-image: url(../../images/computer/SVG/fond-valeurs.svg);
     &__head{
       &-subtitle{
         margin-bottom: 1.875em;

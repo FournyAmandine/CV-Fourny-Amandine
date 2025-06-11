@@ -1,4 +1,4 @@
-@import "breakpoints";
+@import "../settings/breakpoints";
 
 .footer {
   background-color: var(--main-background-color);
@@ -114,19 +114,19 @@
     }
     }
     &-insta{
-      background-image: url(../images/phone/svg/insta.svg);
+      background-image: url(../../images/phone/svg/insta.svg);
     }
     &-facebook{
-      background-image: url(../images/phone/svg/facebook.svg);
+      background-image: url(../../images/phone/svg/facebook.svg);
     }
     &-twitter{
-      background-image: url(../images/phone/svg/twitter.svg);
+      background-image: url(../../images/phone/svg/twitter.svg);
     }
     &-youtube{
-      background-image: url(../images/phone/svg/youtube.svg);
+      background-image: url(../../images/phone/svg/youtube.svg);
     }
     &-pinterest{
-      background-image: url(../images/phone/svg/pinterest.svg);
+      background-image: url(../../images/phone/svg/pinterest.svg);
     }
   }
   &__nav{

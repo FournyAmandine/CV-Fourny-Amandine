@@ -1,4 +1,4 @@
-@import "breakpoints";
+@import "../settings/breakpoints";
 
   .nav{
     .all{
@@ -21,13 +21,13 @@
         background-repeat: no-repeat;
       }
       &-burger{
-        background-image: url(../images/phone/svg/icons/menu.svg);
+        background-image: url(../../images/phone/svg/icons/menu.svg);
       }
       &-search{
-        background-image: url(../images/phone/svg/icons/search.svg);
+        background-image: url(../../images/phone/svg/icons/search.svg);
       }
       &-cart{
-        background-image: url(../images/phone/svg/icons/cart.svg);
+        background-image: url(../../images/phone/svg/icons/cart.svg);
         margin-left: -25%;
       }
     }
@@ -47,7 +47,7 @@
         line-height: 1.25em;
       }
       &-career{
-        background-image: url(../images/phone/svg/logo-s.svg);
+        background-image: url(../../images/phone/svg/logo-s.svg);
         background-repeat: no-repeat;
         background-position: left;
         padding-left: 2.5em;
@@ -102,7 +102,7 @@
           }
         }
         &-form{
-          background-image: url(../images/computer/SVG/logo.svg);
+          background-image: url(../../images/computer/SVG/logo.svg);
           background-repeat: no-repeat;
           padding-left: 5.125em;
           background-position: 0.625em 0.375em;
@@ -117,18 +117,18 @@
           }
         }
         &-search{
-          background-image: url(../images/computer/SVG/icons/search.svg);
+          background-image: url(../../images/computer/SVG/icons/search.svg);
           margin-left: 0.625em;
         }
         &-cart{
-          background-image: url(../images/computer/SVG/icons/cart.svg);
+          background-image: url(../../images/computer/SVG/icons/cart.svg);
         }
         &-lang{
-          background-image: url(../images/computer/SVG/icons/pays.svg);
+          background-image: url(../../images/computer/SVG/icons/pays.svg);
           padding-top: 0.375em;
         }
         &-account{
-          background-image: url(../images/computer/SVG/icons/compte.svg);
+          background-image: url(../../images/computer/SVG/icons/compte.svg);
         }
       }
     }
@@ -165,20 +165,20 @@
         }
       }
       &-school a{
-        background-image: url("../images/computer/SVG/icons/parcours.svg");
+        background-image: url("../../images/computer/SVG/icons/parcours.svg");
       }
       &-skills a{
-        background-image: url("../images/computer/SVG/icons/competences.svg");
+        background-image: url("../../images/computer/SVG/icons/competences.svg");
       }
       &-values a{
-        background-image: url("../images/computer/SVG/icons/valeurs.svg");
+        background-image: url("../../images/computer/SVG/icons/valeurs.svg");
       }
       &-projects a{
-        background-image: url("../images/computer/SVG/icons/projets.svg");
+        background-image: url("../../images/computer/SVG/icons/projets.svg");
         margin-right: 6.7857142857em
       }
       &-qualities a{
-        background-image: url("../images/computer/SVG/icons/qualites.svg");
+        background-image: url("../../images/computer/SVG/icons/qualites.svg");
       }
     }
   }
