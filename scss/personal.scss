@@ -1,0 +1,270 @@
+@import "breakpoints";
+
+
+  .personal {
+    .all {
+      width: 85.06666666667%;
+      margin: auto;
+    }
+
+    background-color: var(--second-main-color);
+    color: white;
+
+    &__name {
+      &-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+        gap: 0.25em;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-link {
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+        border-radius: 2.5em;
+        box-sizing: border-box;
+      }
+
+      &-link:first-of-type {
+        padding: 1.3125em 3.375em 1.3125em 7.5em;
+        padding-left: clamp(7.5em, 33vw, 18.75em);
+        background-color: white;
+        color: var(--main-text-color);
+        background-image: url(../images/computer/SVG/logo.svg);
+        background-repeat: no-repeat;
+        background-position: 3.75em 0.75em;
+        margin: 3.125em 0 0.9375em;
+      }
+
+      &-link:last-of-type {
+        border: 1px solid white;
+        padding: 1.3125em;
+        padding-inline: clamp(3.125em, 23vw, 18.75em);
+      }
+    }
+
+    &__text {
+      font-size: 0.875em;
+      padding: 1.7857142857em 0 1em;
+    }
+    &__profile {
+      margin: 2.0625em -21% 0 0;
+      display: flex;
+      justify-content: flex-end;
+      overflow: hidden;
+      img{
+        width: 80%;
+      }
+      &-photo2{
+        display: none;
+      }
+    }
+    &__first{
+      margin-bottom: 10.625em;
+    }
+    &__article {
+      &-school, &-hobby, &-me {
+        position: relative;
+        text-align: center;
+
+        img:nth-child(2) {
+          width: 100%;
+        }
+      }
+
+      &-school, &-hobby {
+        border-radius: 0 0.9375em 0.9375em 0;
+        margin: auto 0.625em auto -9%;
+        padding: 1.5625em 1.25em 2.5em 0.8125em;
+      }
+
+      &-school {
+        background-color: var(--main-color);
+        color: var(--main-text-color);
+      }
+
+      &-me {
+        background-color: var(--light-green);
+        border-radius: 0.9375em 0 0 0.9375em;
+        margin: 10.125em -9% 10.625em 0.625em;
+        padding: 1.5625em 0.8125em 2.5em 1.25em;
+      }
+
+      &-hobby {
+        background-color: var(--third-main-color);
+      }
+    }
+
+    &__icone {
+      &-school, &-me, &-hobby {
+        position: absolute;
+      }
+
+      &-school {
+        top: -7.5em;
+        left: -0.5625em;
+      }
+
+      &-me {
+        top: -3.5em;
+        left: 1.6875em;
+      }
+
+      &-hobby {
+        top: -4.75em;
+        left: -0.25em;
+      }
+    }
+
+    &__title {
+      margin: 1.2857142857em auto 0.8571428571em;
+      font-size: 0.875em;
+      font-family: Roboto, sans-serif;
+    }
+
+    &__text {
+      &-school, &-me, &-hobby {
+        font-size: 1.5em;
+        line-height: 1.25em;
+        font-weight: 700;
+        margin-bottom: 0.2083333333em;
+      }
+
+      &-hobby {
+        margin-bottom: 1.25em;
+      }
+    }
+
+    &__link {
+      &-school, &-me, &-hobby {
+        font-size: 0.875em;
+        font-weight: 800;
+        color: white;
+      }
+
+      &-school {
+        color: var(--main-text-color);
+        text-decoration: underline;
+      }
+
+      &-hobby {
+        text-decoration-color: var(--main-color);
+      }
+    }
+
+    &__words {
+      &-1, &-2 {
+        font-size: 3em;
+        width: 450%;
+        margin-left: auto;
+        will-change: transform;
+        transition: transform 0.1s linear;
+        white-space: nowrap;
+        span {
+          color: var(--main-color);
+          font-weight: 800;
+        }
+      }
+
+      &-1 {
+        margin: 1.9375em auto 1em -500%;
+        height: max-content;
+      }
+
+      &-2 {
+        padding-bottom: 1.625em;
+      }
+    }
+  }
+
+
+@media (min-width: $tablet) {
+  .personal{
+    &__second{
+      width: 109%;
+    }
+    article{
+      width: 40.5%;
+      padding: 1.5em 1.5em 1.875em;
+    }
+    &__name{
+      &-link:last-child{
+        padding-inline: 15.75em;
+      }
+    }
+    &__article{
+      &-school{
+        margin: auto 0.625em auto -8%;
+      }
+      &-hobby{
+        margin: -20% 0.625em auto -8%;
+      }
+      &-me{
+        margin: -25% 0 0 auto;
+      }
+    }
+    &__words{
+      &-1{
+        margin: 1.9375em auto 1em -100%;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .personal {
+    &__name{
+      width: 37.9319727891%;
+      &-links{
+        width: max-content;
+      }
+      &-link:first-child{
+        padding-left: 5.125em;
+        background-position: 1.375em 0.625em;
+        max-width: 78%;
+      }
+      &-link:nth-child(2){
+        padding: 1.25em 6.375em;
+      }
+      &-container{
+        font-size: 3.5em;
+        flex-direction: column;
+      }
+    }
+    &__first{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12.5em;
+    }
+    &__profile{
+      margin: -0.5%;
+      width: 100%;
+      align-items: flex-start;
+      img{
+        width: 70%;
+      }
+      &-photo1{
+        display: none;
+      }
+      &-photo2{
+        display: block;
+      }
+    }
+    &__second{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      article{
+        border-radius: 0.9375em;
+        margin: 0;
+        max-width: 29%;
+      }
+    }
+  }
+}

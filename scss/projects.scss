@@ -1,0 +1,212 @@
+@import "breakpoints";
+
+
+  .projects {
+    background-color: var(--main-background-color);
+    margin-top: -1px;
+    text-align: center;
+    padding-top: 8.625em;
+    padding-bottom: 8.625em;
+
+    .all {
+      width: 90%;
+      margin: auto;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    &__head {
+      &-title {
+        font-size: 1.875em;
+        width: 70%;
+        margin: auto;
+        color: var(--main-text-color);
+        margin-bottom: 0.5em;
+      }
+
+      &-subtitle {
+        width: 85%;
+        line-height: 1.5em;
+        margin: auto auto 2.75em;
+        font-family: Roboto, sans-serif;
+      }
+    }
+
+    &__articles {
+      display: flex;
+      flex-direction: column;
+      gap: 1.875em;
+      color: white;
+    }
+
+    &__content {
+      *:not(a) {
+        width: 90%;
+      }
+    }
+
+    &__article {
+      &-galerie, &-museum, &-chariot {
+        border-radius: 0.9375em;
+        padding: 2.25em 1.25em 1.9375em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          color: white;
+          text-decoration: none;
+          padding: 1.25em 8.25em;
+          display: block;
+          border: 2px solid white;
+          border-radius: 3.3333333333em;
+          margin-top: 1.75em;
+          font-weight: 900;
+          font-size: 0.75em;
+        }
+      }
+
+      &-galerie {
+        background-color: var(--third-main-color);
+        padding-top: 3.5625em;
+
+        a {
+          margin-top: 2.6875em;
+        }
+
+        img {
+          width: 80%;
+        }
+      }
+
+      &-museum {
+        background-color: var(--dark-blue);
+      }
+
+      &-chariot {
+        background-color: var(--light-blue);
+      }
+    }
+
+    &__title {
+      &-galerie, &-museum, &-chariot {
+        font-size: 1.5em;
+        margin: 1.5em auto;
+      }
+
+      &-galerie {
+        margin: 1.9166666667em auto 0.25em;
+      }
+    }
+
+    &__text {
+      &-galerie, &-museum, &-chariot {
+        font-family: Roboto, sans-serif;
+        line-height: 1.5em;
+        margin: auto;
+      }
+    }
+  }
+
+@media (min-width: $tablet) {
+  .projects {
+    text-align: left;
+    &__head{
+      &-title{
+        width: 100%;
+        text-align: center;
+      }
+    }
+    &__articles {
+      article {
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        a{
+          padding: 1.25em 36%;
+        }
+      }
+    }
+
+    &__content {
+      width: 70%;
+      margin-left: 0.9375em;
+    }
+
+    img {
+      width: 45%;
+      margin-left: 1.0625em;
+    }
+
+    &__title {
+      &-galerie, &-museum, &-chariot {
+        margin-left: 0;
+        margin-bottom: 0.625em;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .projects{
+    text-align: center;
+    &__head{
+      &-title{
+        font-size: 2.75em;
+        width: 50%;
+      }
+    }
+    &__articles{
+      flex-direction: row;
+      height: 70vh;
+      article{
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0;
+        flex-grow: 1;
+        a{
+          padding: 0.8em 25%;
+          align-self: baseline;
+          margin-top: auto;
+          display: inline-block;
+        }
+        img{
+          margin: 0;
+          width: 90%;
+        }
+      }
+    }
+    &__article{
+      &-galerie{
+        padding-top: 2.25em;
+        img{
+          margin: 0;
+          width: 70%;
+        }
+      }
+    }
+    &__content{
+      width: 100%;
+      margin: 0;
+      height: 100%;
+      display: grid;
+    }
+    &__title {
+      &-galerie, &-museum, &-chariot {
+        margin: 1.4583333333em auto 0.5833333333em;
+      }
+      &-galerie{
+        margin-top: 1.875em;
+      }
+    }
+    &__text {
+      &-galerie, &-museum, &-chariot {
+        margin: 0.625em auto;
+      }
+    }
+  }
+}
+

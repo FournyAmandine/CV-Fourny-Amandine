@@ -1,0 +1,148 @@
+@import "breakpoints";
+
+
+  .school{
+    background-color: var(--second-main-color);
+    position: relative;
+    text-align: center;
+    color: var(--main-text-color);
+    background-image: url(../images/computer/SVG/Fond-tel.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .all{
+      z-index: 1;
+      position: relative;
+      width: 90%;
+      margin: auto;
+    }
+    svg{
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      fill: var(--main-color);
+      width: 100%;
+      height: auto;
+    }
+    figure{
+      display: none;
+    }
+    figure.active{
+      display: block;
+    }
+    &__title{
+      padding-top: 4.1428571429em;
+      font-size: 0.875em;
+      font-family: Roboto, sans-serif;
+    }
+    &__content{
+      padding: 1em 0;
+      font-size: 1.875em;
+    }
+    &__figures{
+      position: relative;
+      i{
+        border-color: var(--main-text-color);
+        top: 10em;
+      }
+    }
+    &__link{
+      background-color: white;
+      border-radius: 2.5em;
+      padding: 1.25em 2.0625em;
+      margin: 0 auto 5em;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 900;
+      color: var(--main-text-color);
+    }
+  }
+
+@media (min-width: $tablet) {
+  .fleche {
+    &__droite, &__gauche {
+      display: block;
+    }
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .fleche {
+    &__droite, &__gauche {
+      display: none;
+    }
+  }
+  .school{
+    background-image: none;
+    svg{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    figure{
+      display: block;
+      width: max-content;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__figure-yellow img:hover {
+      border: solid 0.375em var(--border-yellow);
+      background-color: var(--main-color);
+    }
+
+    &__figure-red img:hover{
+      border: solid 0.375em var(--border-red);
+      background-color: var(--red);
+    }
+
+    &__figure-blue img:hover{
+      border: solid 0.375em var(--border-blue);
+      background-color: var(--light-blue);
+    }
+
+    &__figure-green img:hover{
+      border: solid 0.375em var(--border-green);
+      background-color: var(--green);
+    }
+
+    &__figure-purple img:hover{
+      border: solid 0.375em var(--border-purple);
+      background-color: var(--purple);
+    }
+
+    &__figure-orange img:hover{
+      border: solid 0.375em var(--border-orange);
+      background-color: var(--orange);
+    }
+
+    &__figures{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-bottom: 1.5em;
+      img:hover{
+        border-radius: 2.25em;
+        box-shadow: black 1px 5px 10px;
+      }
+    }
+    &__content{
+      max-width: 56.5%;
+      margin: auto;
+      font-size: 2.75em;
+    }
+    &__link{
+      margin-bottom: 5%;
+    }
+  }
+}
+
+@media (min-width: $nav) {
+  .school{
+    &__link{
+      margin-bottom: 10%;
+    }
+  }
+}
