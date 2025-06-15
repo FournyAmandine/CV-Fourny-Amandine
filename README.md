@@ -5,7 +5,7 @@ Ce site montre mon parcours, mes compétences, mes qualités et tant d'autres ch
 
 Ce projet a été réalisé dans le cadre de mon cours de Design Web. Le design reproduit celui du site [M&M's](www.mms.com/fr-be). Il a changé de design le temps que je fasse ce projet...
 
-👉 [Voir le CV]()
+👉 [Voir le site en ligne](https://cv.amandine-fourny.be/)
 
 ---
 
