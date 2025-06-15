@@ -1,25 +1,36 @@
 @import "../settings/breakpoints";
 
-@media (min-width: $mobile) {
   .fleche {
     &__droite, &__gauche{
-      border: solid white;
-      border-width: 0 4px 4px 0;
+      border: none;
+      /*border: solid white;*/
+      /*border-width: 0 4px 4px 0;*/
       display: inline-block;
       padding: 5px;
       position: absolute;
-      top: 1em;
+      top: 6em;
+      background: none;
+      color: var(--main-text-color);
+      font-size: 1.5em;
     }
     &__droite{
-      transform: rotate(-45deg);
+      /*transform: rotate(-45deg);*/
       right: 0.75em;
     }
     &__gauche{
-      transform: rotate(135deg);
-      left: 1.4375em;
+      /*transform: rotate(135deg);*/
+      left: .4375em;
     }
   }
-}
+
+  .qualities__next{
+    right: -0.25em;
+  }
+
+  .offers__next, .offers__prev{
+    top: 0.5em;
+    color: white;
+  }
 
 @media (min-width: $tablet) {
   .fleche {

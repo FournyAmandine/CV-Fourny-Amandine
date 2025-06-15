@@ -28,6 +28,13 @@
       line-height: 1.5em;
       margin-bottom: 5.625em;
     }
+    &__button{
+      background: none;
+      border: none;
+      display: flex;
+      font-family: Vollkorn, serif;
+      font-size: 1em;
+    }
     &__slide{
       &-articles{
         display: flex;
