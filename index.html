@@ -6,57 +6,59 @@
     <meta name="description" content="Cv de Amandine Fourny, web developpeuse">
     <meta name="keywords" content="cv, Amandine, Fourny, Amandine Fourny">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="fr">
     <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="icon" href="/favicon.ico" type="image/x-icon">-->
     <script defer type="module" src="./js/main.js"></script>
-    <title>Amandine Fourny - CV</title>
+    <title>CV d'Amandine Fourny – Développeuse Web</title>
 </head>
 <body itemscope itemtype="https://schema.org/Person">
 <header class="header">
     <h1 class="header__title sro">
         bienvenue
     </h1>
-    <section class="offers">
-        <h2 class="offers__title sro">opportunité exceptionnelle</h2>
+    <section class="offers" aria-labelledby="offers__title">
+        <h2 class="offers__title sro" id="offers__title">opportunité exceptionnelle</h2>
         <div class="offers__content">
-            <span class="offers__hard">
+            <div class="offers__hard">
                 <p class="offers__hard-text">
-                         découvrez une fille qui maitrise <span itemprop="skills"> l'html </span> , <span
+                    découvrez une fille qui maitrise <span itemprop="skills"> l'html </span> , <span
                         itemprop="skills">css</span>, <span itemprop="skills"> le javascript </span> et <strong> tant
                     d'autres
                     choses</strong>
                 </p>
-            </span>
-            <span class="offers__soft-1">
+            </div>
+            <div class="offers__soft-1">
                 <p class="offers__soft-text">
-                    <i class="fleche__gauche offers__prev"></i>
+                    <button aria-label="Voir la skill précédente" class="fleche__gauche offers__prev">←</button>
                     <strong class="offers__skills active" itemprop="skills">un bon esprit d'équipe</strong>
                     <strong class="offers__skills" itemprop="skills">un optimiste</strong>
                     <strong class="offers__skills" itemprop="skills">une ponctualité appréciée</strong>
-                    <i class="fleche__droite offers__next"></i>
+                    <button aria-label="Voir la skill suivante" class="fleche__droite offers__next">→</button>
                 </p>
-            </span>
-            <span class="offers__soft-2">
+            </div>
+            <div class="offers__soft-2">
                 <p class="offers__soft-text all">
-                        profitez de cette chance car elle a <strong>
+                    profitez de cette chance car elle a <strong>
                     <span itemprop="skills">un bon esprit d'équipe</span> , <span
                         itemprop="skills">un optimisme</span>, <span
                         itemprop="skills">et une ponctualité appréciée</span>
-                    </strong>
+                </strong>
                 </p>
-            </span>
+            </div>
         </div>
     </section>
     <section class="nav">
         <div class="all">
             <h2 class="sro">naviguer</h2>
-            <nav class="nav__primary">
-                <h3 class="sro">navigation principale</h3>
+            <nav class="nav__primary" aria-label="navigation principale pour téléphone">
                 <ul class="nav__primary-container">
                     <li class="nav__primary-item">
                         <ul class="nav__other">
                             <li class="nav__other-burger"><a href="#"><span>burger menu</span></a></li>
                             <li class="nav__other-logo">
-                                <img class="nav__other-logo" src="images/phone/svg/A.F..svg" alt="Lettre A et F avec un point après pour chaque en brun">
+                                <img class="nav__other-logo" src="images/phone/svg/A.F..svg"
+                                     alt="Lettre A et F avec un point après pour chaque en brun">
                             </li>
                             <li class="nav__other-search"><a href="#"><span>recherche</span></a></li>
                             <li class="nav__other-cart"><a href="#"><span>panier</span></a></li>
@@ -72,8 +74,8 @@
             </nav>
             <nav class="nav__comp">
                 <div class="nav__comp-container">
-                    <h3 class="sro">navigation principale</h3>
-                    <img class="navt__comp-logo" src="images/phone/svg/A.F..svg" alt="Lettre A et F avec un point après pour chaque en brun">
+                    <img class="navt__comp-logo" src="images/phone/svg/A.F..svg"
+                         alt="Lettre A et F avec un point après pour chaque en brun">
                     <ul class="nav__comp-list">
                         <li class="nav__comp-item" id="nav-burger">
                             <ul class="nav__comp-icones">
@@ -87,7 +89,8 @@
                         <li class="nav__comp-item">
                             <ul class="nav__comp-other">
                                 <li class="nav__comp-other-form"><a href="#form">formulaire</a></li>
-                                <li class="nav__comp-other-following"><a href="#following">me retrouver et me suivre</a></li>
+                                <li class="nav__comp-other-following"><a href="#following">me retrouver et me suivre</a>
+                                </li>
                                 <li class="nav__comp-other-search"><a href="#"><span>recherche</span></a></li>
                                 <li class="nav__comp-other-lang"><a href="#"><span>langue</span></a></li>
                                 <li class="nav__comp-other-account"><a href="#"><span>compte</span></a></li>
@@ -101,16 +104,20 @@
     </section>
 </header>
 <main>
-    <section class="personal">
+    <section class="personal" aria-labelledby="section-personnelle-titre">
+        <h2 id="section-personnelle-titre" class="sro">Présentation personnelle</h2>
         <div class="all">
             <div class="personal__first" id="first-part">
                 <div class="personal__name">
                     <p class="personal__text">je suis</p>
-                    <h2 class="personal__name-container"><span itemprop="givenName">Amandine</span> <span itemprop="familyName">Fourny</span>
-                        <span itemprop="jobTitle">web developper</span></h2>
+                    <h3 class="personal__name-container"><span itemprop="givenName">Amandine</span> <span
+                            itemprop="familyName">Fourny</span>
+                        <span itemprop="jobTitle">web developper</span></h3>
                     <div class="personal__name-links">
-                        <a class="personal__name-link" href="#projects" title="Cliquez pour voir mes projets">Voir mes projets</a>
-                        <a class="personal__name-link" href="#qualities" title="Cliquez pour voir mes qualités">Voir mes qualités</a>
+                        <a class="personal__name-link" href="#projects" title="Aller voir mes projets">Voir mes
+                            projets</a>
+                        <a class="personal__name-link" href="#qualities" title="Aller voir mes qualités">Voir mes
+                            qualités</a>
                     </div>
                 </div>
                 <aside class="personal__profile">
@@ -122,112 +129,143 @@
                 </aside>
             </div>
             <div class="personal__second">
-                <article class="personal__article-school">
+                <article class="personal__article-school" aria-labelledby="school__title">
                     <img class="personal__icone-school" src="images/phone/svg/ecole.svg"
                          alt="une école jaune avec une porte brune, des fenêtres et une horloge bleues et un toit et un drapeau rouges">
                     <img src="images/phone/jpeg/ecole-classe.jpg"
                          alt="une salle de classe (amphithéâtre) avec des éleves et dans le fond un tableau"
-                         srcset="images/computer/JPEG/ecole-classe.jpg 340w">
-                    <h3 class="personal__title">où j’en suis</h3>
+                         srcset="images/computer/JPEG/ecole-classe.jpg 340w"
+                    sizes="344px">
+                    <h3 class="personal__title" id="school__title">où j’en suis</h3>
                     <p class="personal__text-school">actuellement étudiante à la <span itemprop="affiliation">Haute Ecole de la Province de Liège</span>,
                         option web</p>
-                    <a class="personal__link-school" href="#">en découvrir plus sur mon cursus</a>
+                    <a class="personal__link-school" href="#" title="Lien vide">en découvrir plus sur mon cursus</a>
                 </article>
-                <article class="personal__article-me">
+                <article class="personal__article-me" aria-labelledby="personal__title">
                     <img class="personal__icone-me" src="images/phone/svg/reussite.svg"
                          alt="un nuage vert avec une médaille jaune et rouge et des étoiles jaunes">
                     <img src="images/phone/jpeg/me.jpg"
                          alt="une intelligence artificielle qui est devant son ordinateur et sur un fond jaune"
-                         srcset="images/computer/JPEG/moi.jpg 340w">
-                    <h3 class="personal__title">moi en une phrase </h3>
+                         srcset="images/computer/JPEG/moi.jpg 340w" sizes="344px">
+                    <h3 class="personal__title" id="personal__title">moi en une phrase </h3>
                     <p class="personal__text-me">je suis déterminée à réussir et à surmonter les obstacles de la vie</p>
-                    <a class="personal__link-me" href="#">en apprendre plus sur ma détermination</a>
+                    <a class="personal__link-me" href="#" title="Lien vide">en apprendre plus sur ma détermination</a>
                 </article>
-                <article class="personal__article-hobby">
+                <article class="personal__article-hobby" aria-labelledby="hobby__title">
                     <img class="personal__icone-hobby" src="images/phone/svg/cinema.svg"
                          alt="un ticket de cinéma jaune avec une étoile rouge">
                     <img src="images/phone/jpeg/cinema-salle.jpg"
                          alt="une devanture de cinéma vue en contre-plogée dans les tons violets avec un ciel violet"
-                         srcset="images/computer/JPEG/cinema-salle.jpg 340w">
-                    <h3 class="personal__title">mes passions</h3>
-                    <p class="personal__text-hobby">je suis passionnée par le cinéma, le montage, les effets spéciaux et plus!</p>
-                    <a class="personal__link-hobby" href="#">en savoir plus sur mes autres passions</a>
+                         srcset="images/computer/JPEG/cinema-salle.jpg 340w" sizes="344px">
+                    <h3 class="personal__title" id="hobby__title">mes passions</h3>
+                    <p class="personal__text-hobby">je suis passionnée par le cinéma, le montage, les effets spéciaux et
+                        plus!</p>
+                    <a class="personal__link-hobby" href="#" title="Lien vide">en savoir plus sur mes autres
+                        passions</a>
                 </article>
             </div>
             <p class="personal__words-1">
-                html <span class="black">&</span> css <span class="black">&</span> javascript <span class="black">&</span>
-                front-end <span class="black">&</span> client <span class="black">&</span> design <span class="black">&</span> navigateur <span class="black">&</span> html <span class="black">&</span> css <span class="black">&</span> javascript <span class="black">&</span>
-                front-end <span class="black">&</span> client <span class="black">&</span> design <span class="black">&</span> navigateur
+                html <span class="black">&</span> css <span class="black">&</span> javascript <span
+                    class="black">&</span>
+                front-end <span class="black">&</span> client <span class="black">&</span> design <span
+                    class="black">&</span> navigateur <span class="black">&</span> html <span class="black">&</span> css
+                <span class="black">&</span> javascript <span class="black">&</span>
+                front-end <span class="black">&</span> client <span class="black">&</span> design <span
+                    class="black">&</span> navigateur
             </p>
             <p class="personal__words-2">
-                base de données <span class="black">&</span> serveur <span class="black">&</span> requête <span class="black">&</span> protocole <span class="black">&</span> php
-                <span class="black">&</span> cms <span class="black">&</span> base de données <span class="black">&</span> serveur <span class="black">&</span> requête <span class="black">&</span> protocole <span class="black">&</span> php
+                base de données <span class="black">&</span> serveur <span class="black">&</span> requête <span
+                    class="black">&</span> protocole <span class="black">&</span> php
+                <span class="black">&</span> cms <span class="black">&</span> base de données <span
+                    class="black">&</span> serveur <span class="black">&</span> requête <span class="black">&</span>
+                protocole <span class="black">&</span> php
                 <span class="black">&</span> cms <span class="black">&</span>
             </p>
         </div>
     </section>
-    <section id="school-career" class="school">
-        <svg class="school__fond c-hidden" id="background-school" width="1470" height="958" viewBox="0 0 1470 958"
+    <section id="school-career" class="school" aria-labelledby="school-title">
+        <svg class="school__fond c-hidden" id="background-school" focusable="false" aria-hidden="true" width="1470"
+             height="958" viewBox="0 0 1470 958"
              xmlns="http://www.w3.org/2000/svg">
             <path d="M1470 958.366V129.866C852.16 -84.2672 232.567 25.49288 0 103.8928V985H1470Z"/>
         </svg>
         <div class="all">
-            <h2 class="school__title">mon parcours</h2>
+            <h2 class="school__title" id="school-title">mon parcours</h2>
             <p class="school__content">
-                en <time datetime="2022">2022</time>, j’ai fini mes études secondaires et j’ai fait une année préparatoire dans le cinéma pour me former
+                en
+                <time datetime="2022">2022</time>
+                , j’ai fini mes études secondaires et j’ai fait une année préparatoire dans le cinéma pour me former
                 pour les études supérieures. J’ai commencé mon deuxième job étudiant.
             </p>
-            <a class="school__link" href="#" title="en découvrir plus sur mon parcours">en savoir plus sur mon parcours</a>
+            <a class="school__link" href="#" title="Lien vide">en savoir plus sur mon parcours</a>
             <div class="div--all">
                 <div class="school__figures">
-                    <i class="fleche__gauche school__next"></i>
-                    <figure class="school__figure-green" data-source="../images/phone/svg/fond-school-g.svg" data-colour="#28923D" data-text-colour="#5A1F06" data-text="actuellement, je suis étudiante en deuxième année de bachelier, en option web que je combine avec mon travail. Ça me permet de gérer mon temps et mes projets.">
+                    <button class="fleche__gauche school__next" aria-label="Slide précédent">←</button>
+                    <figure tabindex="0" class="school__figure-green"
+                            data-source="../images/phone/svg/fond-school-g.svg" data-colour="#28923D"
+                            data-text-colour="#5A1F06"
+                            data-text="actuellement, je suis étudiante en deuxième année de bachelier, en option web que je combine avec mon travail. Ça me permet de gérer mon temps et mes projets.">
                         <img src="images/all/PNG/web.png"
                              alt="petit bonhomme qui est devant son odinateur sur le bureau avec des lunettes, qui sourit et qui lève les mains fièrement">
                     </figure>
-                    <figure class="school__figure-purple" data-source="../images/phone/svg/fond-school-p.svg" data-colour="#880997" data-text-colour="#FFFFFF" data-text="en 2024, j’ai réussi mon permis ce qui m’a permis d’être plus indépendante. J’ai également réussi ma première année de bachelier.">
+                    <figure tabindex="0" class="school__figure-purple"
+                            data-source="../images/phone/svg/fond-school-p.svg" data-colour="#880997"
+                            data-text-colour="#FFFFFF"
+                            data-text="en 2024, j’ai réussi mon permis ce qui m’a permis d’être plus indépendante. J’ai également réussi ma première année de bachelier.">
                         <img src="images/all/PNG/permis.png"
                              alt="petit bonhomme content qui tient son permis et son bulletin dans chaque main et qui sourit"
                         >
                     </figure>
-                    <figure class="school__figure-red" data-source="../images/phone/svg/fond-school-r.svg" data-colour="#AE3434" data-text-colour="#FFFFFF" data-text="en 2023, j’ai fini mon année de cinéma et j’ai commencé mon bachelier en techniques graphiques, orientation infographie.">
+                    <figure tabindex="0" class="school__figure-red" data-source="../images/phone/svg/fond-school-r.svg"
+                            data-colour="#AE3434" data-text-colour="#FFFFFF"
+                            data-text="en 2023, j’ai fini mon année de cinéma et j’ai commencé mon bachelier en techniques graphiques, orientation infographie.">
                         <img src="images/all/PNG/etudiant.png"
                              alt="petit bonhomme avec un sac à dos et qui tient une farde dans sa main qui sourit">
                     </figure>
-                    <figure class="school__figure-yellow active" data-source="../images/phone/svg/fond-school.svg" data-colour="#FFD200" data-text-colour="#5A1F06" data-text="en 2022, j’ai fini mes études secondaires et j’ai fait une année préparatoire dans le cinéma pour me former pour les études supérieures. J’ai commencé mon deuxième job étudiant.">
+                    <figure tabindex="0" class="school__figure-yellow active"
+                            data-source="../images/phone/svg/fond-school.svg" data-colour="#FFD200"
+                            data-text-colour="#5A1F06"
+                            data-text="en 2022, j’ai fini mes études secondaires et j’ai fait une année préparatoire dans le cinéma pour me former pour les études supérieures. J’ai commencé mon deuxième job étudiant.">
                         <img src="images/all/PNG/cineaste.png"
                              alt="petit bonhomme devant une caméra sur pied qui sourit">
                     </figure>
-                    <figure class="school__figure-blue" data-source="../images/phone/svg/fond-school-b.svg" data-colour="#0E74E1" data-text-colour="#5A1F06" data-text="en 2020, j’ai commencé mon premier job étudiant en tant que vendeuse pour avoir une expérience et voir comme travailler en équipe. ">
+                    <figure tabindex="0" class="school__figure-blue" data-source="../images/phone/svg/fond-school-b.svg"
+                            data-colour="#0E74E1" data-text-colour="#5A1F06"
+                            data-text="en 2020, j’ai commencé mon premier job étudiant en tant que vendeuse pour avoir une expérience et voir comme travailler en équipe. ">
                         <img src="images/all/PNG/vendeur.png"
                              alt="petit bonhomme en chemise avec une cravate qui tient une offre dans sa main et un petit carnet dans l'autre et qui sourit"
                         >
                     </figure>
-                    <figure class="school__figure-orange" data-source="../images/phone/svg/fond-school-o.svg" data-colour="#E77A00" data-text-colour="#5A1F06" data-text="en 2017,  j’ai commencé ma deuxième année de secondaire dans l’option arts plastiques afin de développer ma créativité et pouvoir présenter mes projets.">
+                    <figure tabindex="0" class="school__figure-orange"
+                            data-source="../images/phone/svg/fond-school-o.svg" data-colour="#E77A00"
+                            data-text-colour="#5A1F06"
+                            data-text="en 2017,  j’ai commencé ma deuxième année de secondaire dans l’option arts plastiques afin de développer ma créativité et pouvoir présenter mes projets.">
                         <img src="images/all/PNG/artiste.png"
                              alt="petit bonhomme avec un bonnet et une écharpe qui se tient devant une toile et tient une palette de peinture"
                         >
                     </figure>
-                    <i class="fleche__droite school__prev"></i>
+                    <button class="fleche__droite school__prev" aria-label="Slide suivant">→</button>
                 </div>
             </div>
         </div>
     </section>
-    <section id="qualities" class="qualities">
+    <section id="qualities" class="qualities" aria-labelledby="qualities__title">
         <div class="all">
             <div class="qualities__container">
                 <div>
-                    <h2 class="qualities__head-title">mes qualités</h2>
+                    <h2 class="qualities__head-title" id="qualities__title">mes qualités</h2>
                     <p class="qualities__head-content">
-                        ces qualités font de moi la personne que je suis, elles me définissent et sont importantes pour moi. Elles le seront également en tant qu’employée
+                        ces qualités font de moi la personne que je suis, elles me définissent et sont importantes pour
+                        moi. Elles le seront également en tant qu’employée
                     </p>
-                    <a class="qualities__head-link" href="#" title="Cliquez pour en découvrir plus sur mes qualités">découvrez-moi</a>
+                    <a class="qualities__head-link" href="#"
+                       title="En découvrir plus sur mes qualités">découvrez-moi</a>
                 </div>
                 <aside class="qualities__aside">
                     <h3 class="sro">Explication des qualités</h3>
                     <div class="qualities__fleche">
                         <img class="qualities__fleche-image" src="./images/phone/svg/fleche.svg" alt="fleche jaune"
-                             srcset="images/computer/SVG/fleche.svg 110w images/phone/svg/fleche.svg 100w">
+                             srcset="images/computer/SVG/fleche.svg 110w, images/phone/svg/fleche.svg 100w" sizes="100px">
                         <p class="qualities__fleche-text">choisissez la qualité que vous voulez découvrir</p>
                     </div>
                     <img class="qualities__aside-image" src="images/computer/SVG/autonome-txt.svg"
@@ -235,40 +273,49 @@
                 </aside>
             </div>
             <div class="qualities__articles">
-                <i class="fleche__gauche qualities__prev"></i>
-                <article class="qualities__article-autonomous active" data-source="images/computer/SVG/autonome-txt.svg">
+                <button class="fleche__gauche qualities__prev" aria-label="Slide précédent">←</button>
+                <article tabindex="0" class="qualities__article-autonomous active"
+                         data-source="images/computer/SVG/autonome-txt.svg">
                     <img class="qualities__image-autonomous" src="images/phone/svg/autonome.svg"
                          alt="texte 'autonome' sur fond rose avec des petits bonbons roses et gris autour">
                     <h3 class="qualities__title-autonomous">un bol d'<span itemprop="skills">autonomie</span></h3>
                     <p class="qualities__text-autonomous">et les initiatives m'appellent</p>
-                    <a class="qualities__link-autonomous" href="#" title="Cliquez pour en découvrir plus sur cette qualité">découvrir
+                    <a class="qualities__link-autonomous" href="#"
+                       title="Cliquez pour en découvrir plus sur cette qualité">découvrir
                         ce dont je suis capable seule</a>
                 </article>
-                <article class="qualities__article-motivation" data-source="images/computer/SVG/motivee-txt.svg">
+                <article tabindex="0" class="qualities__article-motivation"
+                         data-source="images/computer/SVG/motivee-txt.svg">
                     <img class="qualities__image-motivation" src="images/phone/svg/motivee.svg"
                          alt="texte 'motivée' sur fond vert avec des petits bonbons vert clair et vert foncé autour">
                     <h3 class="qualities__title-motivation">de la motivation</h3>
                     <p class="qualities__text-motivation">et rien ne m'arrête</p>
-                    <a class="qualities__link-motivation" href="#" title="Cliquez pour en découvrir plus sur cette qualité">décourvrir
+                    <a class="qualities__link-motivation" href="#"
+                       title="Cliquez pour en découvrir plus sur cette qualité">découvrir
                         ce qui me fait persévérer</a>
                 </article>
-                <article class="qualities__article-discretion" data-source="images/computer/SVG/discretion-txt.svg">
+                <article tabindex="0" class="qualities__article-discretion"
+                         data-source="images/computer/SVG/discretion-txt.svg">
                     <img class="qualities__image-discretion" src="images/phone/svg/discrete.svg"
                          alt="texte 'discrète' sur fond bleu avec des petits bonbons bleus et gris autour">
-                    <h3 class="qualities__title-discretion">une touche de discrètion</h3>
+                    <h3 class="qualities__title-discretion">une touche de discrétion</h3>
                     <p class="qualities__text-discretion">pour de l'efficacité en tout point</p>
-                    <a class="qualities__link-discretion" href="#" title="Cliquez pour en découvrir plus sur cette qualité">décourvrir
+                    <a class="qualities__link-discretion" href="#"
+                       title="Cliquez pour en découvrir plus sur cette qualité">découvrir
                         ce qui me rend efficace</a>
                 </article>
-                <article class="qualities__article-responsability" data-source="images/computer/SVG/responsable-txt.svg">
+                <article tabindex="0" class="qualities__article-responsability"
+                         data-source="images/computer/SVG/responsable-txt.svg">
                     <img class="qualities__image-responsability" src="images/phone/svg/responsable.svg"
                          alt="texte 'responsable' sur fond jaune avec des petits bonbons oranges et jaunes autour">
-                    <h3 class="qualities__title-responsability">et un soupçon de <span itemprop="skills">responsabilité</span></h3>
+                    <h3 class="qualities__title-responsability">et un soupçon de <span
+                            itemprop="skills">responsabilité</span></h3>
                     <p class="qualities__text-responsability">et le suivi rigoureux est assuré</p>
-                    <a class="qualities__link-responsability" href="#" title="Cliquez pour en découvrir plus sur cette qualité">découvrir
+                    <a class="qualities__link-responsability" href="#"
+                       title="Cliquez pour en découvrir plus sur cette qualité">découvrir
                         ce que je gère dans ma vie</a>
                 </article>
-                <i class="fleche__droite qualities__next"></i>
+                <button class="fleche__droite qualities__next" aria-label="Slide suivant">→</button>
             </div>
             <div class="scrollBar">
                 <div class="qualities__slider">
@@ -277,39 +324,50 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" aria-labelledby="skills__title">
         <div class="all">
             <aside class="skills__mockup">
                 <h3 class="sro">mockup</h3>
                 <div class="skills__mockup-container">
-                    <img class="skills__mockup-image" src="images/phone/jpeg/css.jpg" alt="">
+                    <img class="skills__mockup-image" src="images/phone/jpeg/css.jpg"
+                         alt="exemple de ce qu'on peut voir sur l'ordinateur">
                 </div>
             </aside>
             <div class="skills__content">
                 <div class="skills__texts">
-                    <h2 class="skills__title">je maitrise <span itemprop="skills">css</span>, la structure, les propriétés, les sélecteurs...
+                    <h2 class="skills__title" id="skills__title">je maitrise <span itemprop="skills">css</span>, la structure, les
+                        propriétés, les sélecteurs...
                     </h2>
-                    <p class="skills__text">je peux faire le fichier css pour styliser un site. Penser au média queeries, mobile first...</p>
+                    <p class="skills__text">je peux faire le fichier css pour styliser un site. Penser au média
+                        queeries, mobile first...</p>
                 </div>
                 <div class="skills__articles">
-                    <ul class="skills__slide-articles">
-                        <li class="skills__slide-html" data-source="../images/phone/svg/html.svg" data-text="je peux faire le fichier html pour un site. Penser aux microdatas, outlines..." data-title="je maitrise l’html, la sémantique, syntaxe, structure...">
-                            <figure>
-                                <img src="images/all/SVG/html.svg" alt="icone du langage html">
-                                <figcaption class="skills__fig-html" itemprop="skills">
-                                    html
-                                </figcaption>
-                            </figure>
+                    <ul class="skills__slide-articles" role="listbox" aria-label="liste de mes compétences">
+                        <li role="option" tabindex="0" class="skills__slide-html" data-source="../images/phone/svg/html.svg"
+                            data-text="je peux faire le fichier html pour un site. Penser aux microdatas, outlines..."
+                            data-title="je maitrise l’html, la sémantique, syntaxe, structure..." aria-selected="true">
+                                <figure>
+                                    <img src="images/all/SVG/html.svg" alt="icone du langage html">
+                                    <figcaption class="skills__fig-html" itemprop="skills">
+                                        html
+                                    </figcaption>
+                                </figure>
                         </li>
-                        <li class="skills__slide-css" data-source="../images/phone/svg/css.svg" data-text="je peux faire le fichier css pour styliser uns site. Penser aux médias queeries, mobile first... " data-title="je maitrise css, la structure, les propriétés, les sélecteurs...">
-                            <figure>
-                                <img src="images/all/SVG/css.svg" alt="icone du langage css">
-                                <figcaption class="skills__fig-css" itemprop="skills">
-                                    css
-                                </figcaption>
-                            </figure>
+
+                        <li role="option" tabindex="0" class="skills__slide-css" data-source="../images/phone/svg/css.svg"
+                            data-text="je peux faire le fichier css pour styliser un site. Penser aux médias queries, mobile first... "
+                            data-title="je maitrise css, la structure, les propriétés, les sélecteurs...">
+                                <figure>
+                                    <img src="images/all/SVG/css.svg" alt="icone du langage css">
+                                    <figcaption class="skills__fig-css" itemprop="skills">
+                                        css
+                                    </figcaption>
+                                </figure>
                         </li>
-                        <li class="skills__slide-js" data-source="../images/phone/svg/js.svg" data-text="je peux faire le fichier javascript pour animer un site. Penser aux noms de variables, au binding, aux classes..." data-title="je maitrise le javascript, la structure, les fonction, boucles, écouteurs d’évènements...">
+
+                        <li role="option" tabindex="0" class="skills__slide-js" data-source="../images/phone/svg/js.svg"
+                            data-text="je peux faire le fichier javascript pour animer un site. Penser aux noms de variables, au binding, aux classes..."
+                            data-title="je maitrise le javascript, la structure, les fonctions, boucles, écouteurs d’évènements...">
                             <figure>
                                 <img src="images/all/SVG/js.svg" alt="icone du langage javascript">
                                 <figcaption class="skills__fig-js" itemprop="skills">
@@ -317,7 +375,9 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li class="skills__slide-php" data-source="../images/phone/svg/php.svg" data-text="je peux faire des injections de php dans un fichier avec de l’html et également gérer les requêtes sql" data-title="j’ai quelques bases en php, model, view, controller, variables...">
+                        <li role="option" tabindex="0" class="skills__slide-php" data-source="../images/phone/svg/php.svg"
+                            data-text="je peux faire des injections de php dans un fichier avec de l’html et également gérer les requêtes sql"
+                            data-title="j’ai quelques bases en php, model, view, controller, variables...">
                             <figure>
                                 <img src="images/all/SVG/php_1.svg" alt="icone du langage php">
                                 <figcaption class="skills__fig-php" itemprop="skills">
@@ -325,7 +385,9 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li class="skills__slide-sgc" data-source="../images/phone/svg/sgc.svg" data-text="je peux faire la base de données d’un site ainsi que des requêtes associées." data-title="je maitrise le langage mysql, les modèles, les tables, les clés...">
+                        <li role="option" tabindex="0" class="skills__slide-sgc" data-source="../images/phone/svg/sgc.svg"
+                            data-text="je peux faire la base de données d’un site ainsi que des requêtes associées."
+                            data-title="je maitrise le langage mysql, les modèles, les tables, les clés...">
                             <figure>
                                 <img src="images/all/SVG/sgc.svg" alt="icone du logiciel dbngines">
                                 <figcaption class="skills__fig-sgc" itemprop="skills">
@@ -333,7 +395,9 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li class="skills__slide-sublime" data-source="../images/phone/svg/sublime-text.svg" data-text="je peux faire les fichiers sur ce logiciel et sait utiliser les outils nécessaires" data-title="je maitrise le logiciel Sublime Text et ses outils">
+                        <li role="option" tabindex="0" class="skills__slide-sublime" data-source="../images/phone/svg/sublime-text.svg"
+                            data-text="je peux faire les fichiers sur ce logiciel et sait utiliser les outils nécessaires"
+                            data-title="je maitrise le logiciel Sublime Text et ses outils">
                             <figure>
                                 <img src="images/all/SVG/sublime-text.svg" alt="icone du logiciel sublime text">
                                 <figcaption class="skills__fig-sublime" itemprop="skills">
@@ -341,7 +405,9 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li class="skills__slide-jet" data-source="../images/phone/svg/jetbrains.svg" data-text="je peux faire les fichiers php, html, css, js... Mais aussi faire une base de données. " data-title="j’ai des bases sur des logiciels jetbrains tels que phpstorm, datagrip...">
+                        <li role="option" tabindex="0" class="skills__slide-jet" data-source="../images/phone/svg/jetbrains.svg"
+                            data-text="je peux faire les fichiers php, html, css, js... Mais aussi faire une base de données. "
+                            data-title="j’ai des bases sur des logiciels jetbrains tels que phpstorm, datagrip...">
                             <figure>
                                 <img src="images/all/SVG/jetbrains.svg" alt="icone du logiciel jetbrains">
                                 <figcaption class="skills__fig-jet" itemprop="skills">
@@ -349,7 +415,9 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li class="skills__slide-github" data-source="../images/phone/svg/github.svg" data-text="je peux aller chercher des fichiers, faire des commits, des push et le faire par le terminal." data-title="je commence à savoir utiliser github pour les projets. ">
+                        <li role="option" tabindex="0" class="skills__slide-github" data-source="../images/phone/svg/github.svg"
+                            data-text="je peux aller chercher des fichiers, faire des commits et des push et le faire par le terminal."
+                            data-title="je commence à savoir utiliser github pour les projets. ">
                             <figure>
                                 <img src="images/all/SVG/github.svg" alt="icone du site github">
                                 <figcaption class="skills__fig-github" itemprop="skills">
@@ -357,7 +425,9 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li class="skills__slide-adobe" data-source="../images/phone/svg/adobe.svg" data-text="je peux faire des affiches, des retouches de photos. Je connais les outils fournis. " data-title="j’ai de bonnes bases avec les logiciels de la suite adobe.">
+                        <li role="option" tabindex="0" class="skills__slide-adobe" data-source="../images/phone/svg/adobe.svg"
+                            data-text="je peux faire des affiches, des retouches de photos. Je connais les outils fournis. "
+                            data-title="j’ai de bonnes bases avec les logiciels de la suite adobe.">
                             <figure>
                                 <img src="images/all/SVG/adobe.svg" alt="icone de la suite adobe">
                                 <figcaption class="skills__fig-adobe" itemprop="skills">
@@ -365,7 +435,9 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li class="skills__slide-maya" data-source="../images/phone/svg/maya.svg" data-text="je peux faire de la modélisation et de l’animation simples. " data-title="j’ai des bases en 3d avec le logiciel maya.">
+                        <li role="option" tabindex="0" class="skills__slide-maya" data-source="../images/phone/svg/maya.svg"
+                            data-text="je peux faire de la modélisation et de l’animation simples. "
+                            data-title="j’ai des bases en 3d avec le logiciel maya.">
                             <figure>
                                 <img src="images/all/SVG/maya.svg" alt="icone du logiciel maya">
                                 <figcaption class="skills__fig-maya" itemprop="skills">
@@ -384,38 +456,44 @@
             </div>
         </div>
     </section>
-    <section id="values" class="values">
+    <section id="values" class="values" aria-labelledby="values__title">
         <div class="all">
-            <h2 class="values__head-title">valeurs importantes pour moi</h2>
-            <p class="values__head-subtitle">ces valeurs me semblent nécessaires au sein d’un travail et j’essaierai de les
+            <h2 class="values__head-title" id="values__title">valeurs importantes pour moi</h2>
+            <p class="values__head-subtitle">ces valeurs me semblent nécessaires au sein d’un travail et j’essaierai de
+                les
                 apporter dans l’équipe. </p>
-            <div class="values__articles">
+            <div class="values__articles" aria-label="liste des valeurs importantes pour moi">
                 <article class="values__article-aid">
-                    <div class="values__aid" data-source="images/phone/svg/entraide-text.svg" data-first="images/phone/svg/entraide.svg">
+                    <div role="button" tabindex="0" aria-pressed="false" class="values__aid" data-source="images/phone/svg/entraide-text.svg"
+                         data-first="images/phone/svg/entraide.svg">
 
                     </div>
                     <h3 class="values__title">Entraide</h3>
                 </article>
                 <article class="values__article-development active">
-                    <div class="values__development" data-source="images/phone/svg/dev-perso-text.svg" data-first="images/phone/svg/dev-perso.svg">
+                    <div role="button" tabindex="0" aria-pressed="false" class="values__development" data-source="images/phone/svg/dev-perso-text.svg"
+                         data-first="images/phone/svg/dev-perso.svg">
 
                     </div>
                     <h3 class="values__title">Développement personnel</h3>
                 </article>
                 <article class="values__article-ambience">
-                    <div class="values__ambience" data-source="images/phone/svg/ambiance-text.svg" data-first="images/phone/svg/ambiance.svg">
+                    <div role="button" tabindex="0" aria-pressed="false" class="values__ambience" data-source="images/phone/svg/ambiance-text.svg"
+                         data-first="images/phone/svg/ambiance.svg">
 
                     </div>
                     <h3 class="values__title">Ambiance</h3>
                 </article>
                 <article class="values__article-ideal">
-                    <div class="values__ideal" data-source="images/phone/svg/ideal-text.svg" data-first="images/phone/svg/ideal.svg">
+                    <div role="button" tabindex="0" aria-pressed="false" class="values__ideal" data-source="images/phone/svg/ideal-text.svg"
+                         data-first="images/phone/svg/ideal.svg">
 
                     </div>
                     <h3 class="values__title">Idéal</h3>
                 </article>
                 <article class="values__article-variety">
-                    <div class="values__variety" data-source="images/phone/svg/variete-text.svg" data-first="images/phone/svg/variete.svg">
+                    <div role="button" tabindex="0" aria-pressed="false" class="values__variety" data-source="images/phone/svg/variete-text.svg"
+                         data-first="images/phone/svg/variete.svg">
 
                     </div>
                     <h3 class="values__title">Variété</h3>
@@ -431,35 +509,46 @@
     <section id="projects" class="projects" itemscope itemtype="https://schema.org/CreativeWork">
         <div class="all">
             <h2 class="projects__head-title">découvrez 3 projets, qui je l’espère vous plairont ! </h2>
-            <p class="projects__head-subtitle">ces projets touchent à plusieurs domaines de l’infographie pour étendre les possibiltés</p>
+            <p class="projects__head-subtitle">ces projets touchent à plusieurs domaines de l’infographie pour étendre
+                les possibiltés</p>
             <div class="projects__articles">
-                <article class="projects__article-galerie">
-                    <img itemprop="image" src="images/phone/png/galerie.png" alt="galerie de photos"
-                         srcset="images/computer/PNG/galerie.png 281w">
+                <article tabindex="0" class="projects__article-galerie">
+                    <img itemprop="image" src="images/phone/png/galerie.png" alt="Capture d'écran d'une galerie photo utilisant grid layout"
+                         srcset="images/computer/PNG/galerie.png 281w" sizes="281px">
                     <div class="projects__content">
                         <h3 class="projects__title-galerie" itemprop="name">galerie photos</h3>
-                        <p itemprop="abstract" class="projects__text-galerie">ce site a été réaliser dans le cadre du cours de design Web.
+                        <p itemprop="abstract" class="projects__text-galerie">ce site a été réaliser dans le cadre du
+                            cours de design Web.
                             Il est fait grâce à la technique grid layout. </p>
-                        <a class="projects__link-galerie" itemprop="url" href="#" title="Cliquez pour découvrir plus sur ce projet">en voir plus</a>
+                        <a class="projects__link-galerie" itemprop="url" href="#" aria-label="Voir plus de détails sur le projet galerie photos"
+                           title="Lien vide">en voir plus</a>
                     </div>
                 </article>
-                <article class="projects__article-museum">
+                <article tabindex="0" class="projects__article-museum">
                     <img itemprop="image" src="images/phone/jpeg/musee.jpg"
                          alt="coin d'un musée avec des oeuvres accrochées et une porte dans le fond fait en 2D">
                     <div class="projects__content">
-                        <h3 class="projects__title-museum" itemprop="name">mode VR d’une application de visite d’un musée</h3>
-                        <p itemprop="abstract" class="projects__text-museum">cette page de l’application a été faite en 2d. Tout, sauf
-                            les oeuvres est créé pour rendre cette visite plus réelle. Je l’ai réalisée car rien ne me correspondait. </p>
-                        <a class="projects__link-museum" itemprop="url" href="#" title="Cliquez pour découvrir plus sur ce projet">en voir plus</a>
+                        <h3 class="projects__title-museum" itemprop="name">mode VR d’une application de visite d’un
+                            musée</h3>
+                        <p itemprop="abstract" class="projects__text-museum">cette page de l’application a été faite en
+                            2d. Tout, sauf
+                            les oeuvres est créé pour rendre cette visite plus réelle. Je l’ai réalisée car rien ne me
+                            correspondait. </p>
+                        <a class="projects__link-museum" itemprop="url" href="#"
+                           aria-label="Voir plus de détails sur le projet musée"
+                           title="Lien vide">en voir plus</a>
                     </div>
                 </article>
-                <article class="projects__article-chariot">
+                <article tabindex="0" class="projects__article-chariot">
                     <img itemprop="image" src="images/phone/jpeg/charriot.jpg"
                          alt="chariot en bois avec un paysage derrière fait en 3D">
                     <div class="projects__content">
-                        <h3 class="projects__title-chariot" itemprop="name">modélisation 3D d’une petite cabane sur l’herbe</h3>
-                        <p itemprop="abstract" class="projects__text-chariot">ce projet a été fait dans le cadre d’un examen de 4h. </p>
-                        <a class="projects__link-chariot" itemprop="url" href="#" title="Cliquez pour découvrir plus sur ce projet">en voir plus</a>
+                        <h3 class="projects__title-chariot" itemprop="name">modélisation 3D d’une petite cabane sur
+                            l’herbe</h3>
+                        <p itemprop="abstract" class="projects__text-chariot">ce projet a été fait dans le cadre d’un
+                            examen de 4h. </p>
+                        <a class="projects__link-chariot" itemprop="url" href="#" aria-label="Voir plus de détails sur le projet chariot"
+                           title="Lien vide">en voir plus</a>
                     </div>
                 </article>
             </div>
@@ -468,58 +557,61 @@
     <section id="form" class="form">
         <div class="all">
             <h2 class="form__title">formulaire</h2>
-            <p class="form__subtitle">si vous souhaitez me contactez parce que vous avez des questions ou que mon travail
+            <p class="form__subtitle">si vous souhaitez me contactez parce que vous avez des questions ou que mon
+                travail
                 vous intéresse, écrivez-moi ! </p>
             <form action="#" method="post" class="form__container">
                 <div class="form__fields-name">
                     <label class="form__label" for="name">nom</label>
-                    <input class="form__input" type="text" id="name" name="name">
+                    <input class="form__input" type="text" id="name" name="name" required aria-required="true">
                 </div>
                 <div class="form__fields-prenom">
                     <label class="form__label" for="prenom">prénom</label>
-                    <input class="form__input" type="text" id="prenom" name="prenom">
+                    <input class="form__input" type="text" id="prenom" name="prenom" required aria-required="true">
                 </div>
                 <div class="form__fields-email">
                     <label class="form__label" for="email">adresse email</label>
-                    <input class="form__input" type="text" id="email" name="email">
+                    <input class="form__input" type="email" id="email" name="email" required aria-required="true">
                 </div>
                 <div class="form__fields-message">
                     <label class="form__label" for="message">votre message</label>
-                    <textarea class="form__text" name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea class="form__text" name="message" id="message" cols="30" rows="10" required aria-required="true"></textarea>
                 </div>
-                <input class="form__submit" type="submit" value="envoyer">
+                <button type="submit" class="form__submit">envoyer</button>
             </form>
         </div>
     </section>
-    <section class="reviews" itemscope itemtype="https://schema.org/Review">
+    <section class="reviews" itemscope itemtype="https://schema.org/Review" aria-labelledby="reviews__title">
         <div class="all">
-            <h2 class="reviews__head-title">ils me font confiance</h2>
+            <h2 class="reviews__head-title" id="reviews__title">ils me font confiance</h2>
             <div class="reviews__container">
                 <div class="reviews__item-1 active">
                     <p class="reviews__title-1">Bon</p>
-                    <img class="reviews__image" src="images/phone/svg/note-globale.svg" alt="">
+                    <img class="reviews__image" src="images/phone/svg/note-globale.svg" alt="alignement d'étoile donnant une note">
                     <small class="reviews__small-1">Basé sur 4 avis</small>
                     <img class="reviews__truspilot" src="images/phone/svg/truspilot.svg"
                          alt="logo Truspilot avec une étoile devant">
                 </div>
                 <div class="reviews__items">
                     <div class="reviews__item-2">
-                        <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
+                        <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="alignement d'étoile donnant une note de 4 sur 5">
                         <p class="reviews__title-2" itemprop="name">sérieuse</p>
-                        <p class="reviews__subtitle-2" itemprop="reviewBody">cette fille travaille sérieusement et professionnellement</p>
+                        <p class="reviews__subtitle-2" itemprop="reviewBody">cette fille travaille sérieusement et
+                            professionnellement</p>
                         <small class="reviews__small-2"><em itemprop="author">Jean</em>, <span
                                 itemprop="sdDatePublished">19 octobre</span></small>
                         <p class="reviews__text-2">Les avis populaires</p>
                     </div>
                     <div class="reviews__item-3">
-                        <img itemprop="reviewRating" src="images/computer/SVG/5-etoiles.svg" alt="">
+                        <img itemprop="reviewRating" src="images/computer/SVG/5-etoiles.svg" alt="alignement d'étoile donnant une note de 5 sur 5">
                         <p class="reviews__title-3" itemprop="name">souriante</p>
-                        <p class="reviews__subtitle-3" itemprop="reviewBody">cette fille est souriante et on voit qu'elle aime son travail</p>
+                        <p class="reviews__subtitle-3" itemprop="reviewBody">cette fille est souriante et on voit
+                            qu'elle aime son travail</p>
                         <small class="reviews__small-3"><em class="black" itemprop="author">Laurent</em>, <span
                                 itemprop="sdDatePublished">20 décembre</span></small>
                     </div>
                     <div class="reviews__item-4">
-                        <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="">
+                        <img itemprop="reviewRating" src="images/computer/SVG/4-etoiles.svg" alt="alignement d'étoile donnant une note de 4 sur 5">
                         <p class="reviews__title-4" itemprop="name">rapide</p>
                         <p class="reviews__subtitle-4" itemprop="reviewBody">le travail a été rapide effectué!</p>
                         <small class="reviews__small-4"><em class="black" itemprop="author">Anne-Catherine</em>, <span
@@ -530,10 +622,9 @@
         </div>
     </section>
 </main>
-<footer class="footer">
-    <img class="footer__img" src="images/phone/svg/footer.svg"
-         alt="phrase 'one for all and all for the code' entourée d'élements du code sur différents fond de couleurs le tout sur fond jaune"
-         srcset="images/computer/SVG/footer.svg 1470w">
+<footer class="footer" role="contentinfo">
+    <img class="footer__img" src="images/computer/SVG/footer.svg"
+         alt="phrase 'one for all and all for the code' entourée d'élements du code sur différents fond de couleurs le tout sur fond jaune">
     <div class="all">
         <div class="footer__contact">
             <div class="footer__address">
@@ -558,18 +649,23 @@
             <aside class="footer__following-aside">
                 <h2 class="sro">me suivre</h2>
                 <form action="#" method="post" class="footer__following-form">
-                    <p class="footer__following-text">si vous voulez suivre mon travail et savoir quand un nouveau projet sort, inscrivez-vous à la newsletter</p>
+                    <p class="footer__following-text">si vous voulez suivre mon travail et savoir quand un nouveau
+                        projet sort, inscrivez-vous à la newsletter</p>
                     <label class="footer__following-label" for="follow">Adresse e-mail*</label>
-                    <input class="footer__following-input" type="text" name="follow" id="follow">
-                    <small class="footer__following-small">En vous inscrivant, vous accepter de recevoir des mails dès qu’un projet sort ou
-                        lorsqu’il y a quelque chose de nouveau. Vous pouvez bien sûr vous désabonner à tout moment ! </small>
+                    <input class="footer__following-input" type="email" name="follow" id="follow">
+                    <small class="footer__following-small">En vous inscrivant, vous accepter de recevoir des mails dès
+                        qu’un projet sort ou
+                        lorsqu’il y a quelque chose de nouveau. Vous pouvez bien sûr vous désabonner à tout moment
+                        ! </small>
                     <input class="footer__following-submit" type="submit" name="submit" value="je m'inscris">
                 </form>
             </aside>
             <nav class="footer__nav">
                 <h2 class="sro">navigation secondaire</h2>
                 <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><button class="footer__btn" aria-expanded="false">découvrir d'autres projets<span class="footer__arrow">▼</span></button>
+                    <li class="footer__nav-item">
+                        <button class="footer__btn" aria-expanded="false" aria-controls="projets-list">découvrir d'autres projets<span
+                                class="footer__arrow">▼</span></button>
                         <ul class="footer__other-list">
                             <li class="footer__other-item">animation 3d</li>
                             <li class="footer__other-item">flyers 2d</li>
@@ -577,30 +673,33 @@
                         </ul>
                         <i class="fleche__bas"></i>
                     </li>
-                    <li class="footer__nav-item"><button class="footer__btn" aria-expanded="false">site de référence<span class="footer__arrow">▼</span></button>
+                    <li class="footer__nav-item">
+                        <button class="footer__btn" aria-expanded="false">site de référence<span
+                                class="footer__arrow">▼</span></button>
                         <ul class="footer__sites-list">
                             <li class="footer__sites-item"><a href="https://www.mms.com/fr-be"
-                                title="Cliquez pour aller sur le site de référence de ce CV">M&Ms</a>
+                                                              title="Cliquez pour aller sur le site de référence de ce CV">M&Ms</a>
                             </li>
                         </ul>
                         <i class="fleche__bas"></i>
                     </li>
-                    <li class="footer__nav-item"><button class="footer__btn" aria-expanded="false">suivez-moi</button>
+                    <li class="footer__nav-item">
+                        <button class="footer__btn" aria-expanded="false">suivez-moi</button>
                         <ul class="footer__social-list">
                             <li class="footer__social-insta">
-                                <a class="insta" href="#" title="Cliquez pour aller sur mon compte instagram"><span>instagram</span></a>
+                                <a class="insta" href="#" title="Cliquez pour aller sur mon compte instagram" aria-label="Mon compte Instagram"><span>instagram</span></a>
                             </li>
                             <li class="footer__social-facebook"><a class="facebook" href="#"
-                                title="Cliquez pour aller sur mon compte facebook"><span>facebook</span></a>
+                                                                   title="Cliquez pour aller sur mon compte facebook" aria-label="Mon compte Facebook"><span>facebook</span></a>
                             </li>
                             <li class="footer__social-twitter"><a class="twitter" href="#"
-                                title="Cliquez pour aller sur mon compte twitter"><span>twitter</span></a>
+                                                                  title="Cliquez pour aller sur mon compte twitter" aria-label="Mon compte Twitter"><span>twitter</span></a>
                             </li>
                             <li class="footer__social-youtube"><a class="youtube" href="#"
-                                title="Cliquez pour aller sur mon compte youtube"><span>youtube</span></a>
+                                                                  title="Cliquez pour aller sur mon compte youtube" aria-label="Mon compte Youtube"><span>youtube</span></a>
                             </li>
                             <li class="footer__social-pinterest"><a class="pinterest" href="#"
-                                title="Cliquez pour aller sur mon compte pinterest"><span>pinterest</span></a>
+                                                                    title="Cliquez pour aller sur mon compte pinterest" aria-label="Mon compte Pinterest"><span>pinterest</span></a>
                             </li>
                         </ul>
                     </li>
